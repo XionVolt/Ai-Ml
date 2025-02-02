@@ -16,7 +16,7 @@ The repo is organized to keep things clean and accessible:
 ```
 📂 AI-ML-Learning
 │-- 📜 README.md   # This file, an overview of the repository
-│-- 📂 Terminologies  # Definitions and explanations of AI/ML & math concepts
+│-- 📂 Terminologies  # Definitions and explanations of AI/ML & math concepts , basically includes theoritical concepts more 
 │-- 📂 Practical-Implementations  # Code examples and hands-on projects
 │-- 📂 Notebooks  # Jupyter Notebooks for experiments and visualizations
 │-- 📂 Graphs  # Code for plotting various graphs and data visualizations
