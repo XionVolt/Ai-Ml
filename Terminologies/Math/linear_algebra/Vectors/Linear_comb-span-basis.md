@@ -64,11 +64,12 @@ The ratios do not match, so the vectors are not collinear.
 ### What are Scalar Multiples?
 A multiple of something is the result of multiplying it by a scalar (a constant). For example:
 - Multiples of `3` are `3`, `2×3=6`, `3×3=9`, and so on.
-- Similarly, for vectors, scalar multiples are obtained by multiplying all components by the scalar. 
+- Similarly, for vectors, scalar multiples are obtained by multiplying all components of that vector by the scalar. 
 
 ### Some Properties:
 - All scalar multiples of a vector lie on the same straight line passing through the origin and a point defined by the vector.
 - This can also be verified programmatically by plotting graphs.
+- The set of all scalar multiples of given vector is called span of that given vector . It represents all points on line defined by that vector .
 
 ### Example:
 If **v = [1, 2]**, then:
@@ -85,9 +86,59 @@ Two vectors are collinear if one is a scalar multiple of the other.
 ### Formula:
 If there are two vectors:
 v = [v1, v2], w = [w1, w2]
-then , if `w = kv` (where k is constant) , then vectors v and k are said to be collinear(means both v and w lies on the same line , and vectors produced by these two vectors also lies on that same line , we already talk about this how this happens )
+then , if we take `w = kv` (or `v = kw` , **for now take `w=kv`**)(where k is constant) , then vectors v and k are said to be collinear(means both v and w lies on the same line , and vectors produced by these two vectors also lies on that same line , we already talk about this how this happens )
 
-this further gives us this formula `k = w/v` 
+this further gives us this formula `k = w/v`  , then :
+```
+[w1] = k * [v1]
+[w2]       [v2]
+```
+which gives : 
+```
+w1 = kv1 
+          (we simply multiply `v` both components by scalar `k`)
+w2 = kv2
+```
+which gives : 
+```
+w1\v1 = k
+w2\v2=k
+(now if the values of both `k` will come same , that means our `v` and `w` are collinear otherwise not)
+```
+        
+        
+    and from here our component ratios method comes 
+    because if `RHS = RHS`
+    Then its obvious to say , `LHS = LHS` too . 
+    which gives us here same component ratios thing:
+    *w1/v1 = w2/v2* (If yes vectors are collinear)
+
+### 5. Vectors vs Points (I recommend is to read about this from that link i provided at top) 
+- Btw main thing here to remember is , we can treat vectors as points , the vector points ,  is at the tip of that vector 
+- In general, if you're thinking of a vector on its own, think of it as an arrow, and if you're thinking of a collection, it's convenient to think of them as points
+
+### 6. Span in 3D(I recommend is to read about this from that link i provided at top)
+Main things are: 
+-  A linear combination of three vectors is defined pretty much the same way as for two: Choose three scalars, use them to scale each of your vectors, then add them all together. And again, the span of these vectors is the set of all possible linear combinations.
 
 
+- The Vector pointing to the 3rd axis with length 1 commonly called "k hat" or "the unit vector in the z-direction".
 
+###7. I-hat , J-hat , K-hat representation , respectively
+```
+[1]                     [0]                     [0]
+[0]                     [1]                     [0]
+[0]                     [0]                     [1]
+```
+
+### 7. Linearly Dependent vs Linearly Independent(You can read about this also from that link)
+Important thing:
+- In the case where the third vector was sitting on the span of the first two, or the case where two vectors happen to line up, we want some terminology to describe the fact that at least one of these vectors is redundant, not adding anything to our span. Whenever this happens, where you have multiple vectors, and you could remove one without reducing their span, the relevant terminology is to say they are “linearly dependent”.
+   ![](../../Images/LinearlyDependent.svg)
+  
+   - Another way of phrasing this would be to say that one of the vectors can be expressed as a linear combination of the others. That is, it's already in the span of the other two.
+  ![](../../Images/LinearlyDependent3d.svg)
+- On the other hand, if each vector really does add another dimension to the span, they are said to be “linearly independent”.
+
+  ![](../../Images/LinearlyIndependent3d.svg)
+ 
