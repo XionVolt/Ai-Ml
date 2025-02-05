@@ -56,3 +56,9 @@ Machine Learning is a subset of **Artificial Intelligence (AI)** that focuses on
 
 ### Key Idea:
 - **Learning from Data**: ML models learn patterns from historical data and use those patterns to make predictions on new, unseen data.
+- The more opportunities you will give learning algorithm(model) to learn the better it perform . Basically here we talking about more data .
+
+
+### Supervised learning : 
+Supervised learning refers to algorithms that learns X to Y  or we can also say Input to Output mappings.The key characteristics of supervised learning is that you give your learning algorithms , **examples** to learn from , that includes the right answers , whereby right answers means here correct label Y for a given input X and by seeing correct pairs of input X and desired output label Y that learning algorithm eventually learns to take just the input alone without the output label and gives us reasonable accurate prediction or guess of the output , 
+Example : https://youtu.be/sca5rQ9x1cA?si=x5hcOOdTOfFomfpT&t=64
