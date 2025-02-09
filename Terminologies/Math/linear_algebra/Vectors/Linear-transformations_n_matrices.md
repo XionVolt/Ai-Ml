@@ -397,3 +397,110 @@ The transformation matrix that satisfies the given behaviors is:
 | 1   2 |  
 | -1  1 |  
 ```
+
+
+### Formal Properties of Linear Transformations
+
+Linear transformations are a special class of transformations in linear algebra that adhere to strict mathematical rules. These transformations ensure that grid lines remain parallel and evenly spaced and origin remains fixed when applied. The two key properties of a linear transformation are:
+
+#### 1. Additivity Property
+
+This property states that the transformation of the sum of two vectors is the same as the sum of the transformations of those vectors. Mathematically:
+```
+L( v + w ) = L( v ) + L( w )
+```
+
+##### Explanation:
+- If you have two vectors `v` and `w` in a space, and you first add them to get `v + w`, the transformation `L` applied to this result is the same as transforming `v` and `w` individually and then adding their transformed results.
+- This property ensures that linear transformations preserve the structure of vector addition.
+
+### Example:
+Let:
+```
+v =  | 1 |
+     | 2 |
+
+w =  | 3 |
+     | 4 |
+```
+And the linear transformation `L` is represented by the matrix:
+```
+L = | 2 1 | 
+    | 1 1 |
+```
+1. First, compute `v + w`:
+```
+v + w = | 1 + 3 | = | 4 | 
+        | 2 + 4 |   | 6 |
+```
+2. Apply `L` to `v + w`:
+```
+L( v + w ) = | 2(4) + 1(6) | = | 14 | 
+             | 1(4) + 1(6) |   | 10 |
+```
+3. Apply `L` to `v`:
+```
+L( v ) =   | 2(1) + 1(2) | = | 4 | 
+           | 1(1) + 1(2) |   | 3 |
+```
+4. Apply `L` to `w`:
+```
+L( w ) = | 2(3) + 1(4) | = | 10 | 
+         | 1(3) + 1(4) |   | 7  |
+```
+5. Add the transformed results:
+```
+L( v ) + L( w ) = | 4 + 10 | = | 14 | 
+                  | 3 + 7  |   | 10 |
+```
+6. Compare the result to `v + w`:
+```
+L( v + w ) = L( v ) + L( w ) =  | 14 | 
+                                | 10 |   
+```
+In this example, the linear transformation `L` preserves the structure of vector addition, as the transformed result of `v + w` is the same as the sum of the transformed results of `v` and `w`.
+
+---
+
+### 2. Scaling Property
+
+This property states that scaling (multiplying) a vector by a scalar before applying a transformation is the same as scaling the transformed vector after applying the transformation. Mathematically:
+```
+L( s * v ) = s * L( v )
+```
+### Explanation:
+- If a vector `v` is scaled by a scalar `s`, the transformation `L` applied to the scaled vector produces the same result as scaling the transformed vector `L(v)` by the scalar `s`.
+- This property ensures that linear transformations preserve the structure of scalar multiplication.
+
+### Example:
+Let:
+```
+v =  | 1 |
+     | 2 |
+```
+And the linear transformation `L` is represented by the matrix:
+```
+L = | 2 1 | 
+    | 1 1 |
+```
+1. Scale `v` by 2:
+```
+s * v = | 2(1) | = | 2 | 
+        | 2(2) |   | 4 |
+```
+2. Apply `L` to the scaled vector:
+```
+L( s * v ) = | 2(2) + 1(4) | = | 8 | 
+             | 1(2) + 1(4) |   | 6 |
+```
+3. Now , Scale the transformed vector by 2:
+```
+s * L( v ) = | 2(1) + 1(2) | = | 3 | 
+             | 1(1) + 1(2) |   | 3 |
+```
+4. Compare the result to `s * v`:
+```
+s * L( v ) = s * | 2(1) + 1(2) | = | 4 |  => 2 * | 4 | = | 8 |
+                 | 1(1) + 1(2) |   | 3 |         | 3 |   | 6 |
+```
+In this example, the linear transformation `L` preserves the structure of scaling, as the transformed result of `s * v` is the same as the scaled result of `L(v)`.
