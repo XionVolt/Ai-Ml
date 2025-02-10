@@ -1,0 +1,4 @@
+# Read this to deep dive into topics of Linear transformations and matrices by `3blue1brown`: 
+https://www.3blue1brown.com/lessons/matrix-multiplication
+
+Oftentimes, you find yourself wanting to describe the effects of applying one linear transformation, then applying another. For example, maybe you want to describe what happens when you rotate the plane **90 degrees , counterclockwise**, then to apply a **shear**. The overall effect here, from start to finish, is another linear transformation, distinct from the rotation and the shear. This new linear transformation is commonly called the ***“composition”*** of the two separate transformations we applied(***composition*** of *rotation* and *shear*).

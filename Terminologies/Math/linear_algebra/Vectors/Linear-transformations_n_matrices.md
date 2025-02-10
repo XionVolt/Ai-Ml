@@ -504,3 +504,7 @@ s * L( v ) = s * | 2(1) + 1(2) | = | 4 |  => 2 * | 4 | = | 8 |
                  | 1(1) + 1(2) |   | 3 |         | 3 |   | 6 |
 ```
 In this example, the linear transformation `L` preserves the structure of scaling, as the transformed result of `s * v` is the same as the scaled result of `L(v)`.
+
+There are few transformations that have special names : Of which two can be seen by going to these links : 
+1. [Rotation](https://www.3blue1brown.com/lessons/linear-transformations#rotation)
+2. [Shear](https://www.3blue1brown.com/lessons/linear-transformations#shear)
