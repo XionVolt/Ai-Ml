@@ -16,5 +16,14 @@ start to finish, is another linear transformation, distinct from the rotation an
 
 [You first apply transformation represented by matrix on the right , then apply transformation represented by matrix on the left..., on your grid](https://youtu.be/XkY2DOUCWMU?si=8MjcKX5jMvmuw8IS&t=245)
 - Its like a function taking value computed from 
+      - And this is only the reason that order we put 2 matrices(or more) when we multiply them , that order matters  [See this visually](https://youtu.be/XkY2DOUCWMU?si=Cl2zS90uuAj4Eopu&t=447)
 
-file in progress...
+
+[This is how you can calculate composition matrix](https://youtu.be/XkY2DOUCWMU?si=kbzRdrB6kwqqVTZp&t=290)
+- Basically after seeing this clip we can say matrix multiplication is way to find ultimate position(coordinates) of `i`,`j` ,`k` ..., `n` hat. 
+    - And once we calculate our composition matrix we can find any vector final location given to us , that we get after applying n amount of linear transformations on that vector in respective order.
+
+- Composition matrix records the effects of applying n amount of linear transformations to `i`,`j` (basically we can say , apply to plane) in 2D space. And obviously this thing applicable to 3D space and above too . 
+So think of Matrix multiplication of applying one transformation then another . 
+
+- **Matrix multiplication is associative** : Means if we have 3 matrices A,B,C and then A * (B * C) = (A * B) * C , as both things saying the one thing first apply C then apply B then apply A . Simple !
