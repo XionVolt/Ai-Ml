@@ -458,7 +458,7 @@ L( v ) + L( w ) = | 4 + 10 | = | 14 |
 L( v + w ) = L( v ) + L( w ) =  | 14 | 
                                 | 10 |   
 ```
-In this example, the linear transformation `L` preserves the structure of vector addition, as the transformed result of `v + w` is the same as the sum of the transformed results of `v` and `w`.
+In this example, the linear transformation `L` preserves the structure of vector addition, as the transformed result of `v + w` is the same as the sum of the transformed results of `v` and `w`. We also call this property with the term **"additivity"**.
 
 ---
 
@@ -503,7 +503,7 @@ s * L( v ) = | 2(1) + 1(2) | = | 3 |
 s * L( v ) = s * | 2(1) + 1(2) | = | 4 |  => 2 * | 4 | = | 8 |
                  | 1(1) + 1(2) |   | 3 |         | 3 |   | 6 |
 ```
-In this example, the linear transformation `L` preserves the structure of scaling, as the transformed result of `s * v` is the same as the scaled result of `L(v)`.
+In this example, the linear transformation `L` preserves the structure of scaling, as the transformed result of `s * v` is the same as the scaled result of `L(v)`. We also call this property with term **"Homogeneity"**.
 
 There are few transformations that have special names : Of which two can be seen by going to these links : 
 1. [Rotation](https://www.3blue1brown.com/lessons/linear-transformations#rotation)

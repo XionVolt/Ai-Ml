@@ -107,5 +107,27 @@ Shoe sizes (in whole numbers) → {5, 6, 7, 8, 9}
 | **Continuous Data** | Can take **any value within a range**          | Height (5.7ft, 6.2ft), Temperature (22.5°C, 30.1°C) |
 
 
+**Some common terminologies used in Machine Learning** - [See this video clip by Andrew ng](https://youtu.be/dLc-lfEEYss?si=O79TZU4lOysG9fnk&t=384)
+-  The dataset that used to train an Ai model is called **training set** 
+- x = *input* variable (*feature*(or *input feature*) and other fancy names)
 
+- y = *output* variable/*target* variable and obviously other fancy names . 
 
+The main thing is concept !!
+
+- The Data set has one specific row for specific feature and for its corresponding target variable . 
+```
+           x  |  y
+    ex1-input |  ex1_output
+    ex2-input |  ex2_output
+```
+So basically each row represents different training example . 
+**Total no. of rows in data set is represented by m** here m = 2
+,we can say here we have total 2 training examples . 
+
+- To indicate single training example: We use notation **(x,y)** 
+***Example: (ex1-input,ex1_output)***
+- ***Can also write like this based on usecase***
+***(x<sup>(i)</sup>,y<sup>(i)</sup>)***  = 
+***(ex1-input,ex1_output)*** . 
+    - So consider this notation as some index in dataset.
