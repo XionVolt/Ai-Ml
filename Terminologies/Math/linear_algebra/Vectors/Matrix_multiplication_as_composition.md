@@ -26,4 +26,18 @@ start to finish, is another linear transformation, distinct from the rotation an
 - Composition matrix records the effects of applying n amount of linear transformations to `i`,`j` (basically we can say , apply to plane) in 2D space. And obviously this thing applicable to 3D space and above too . 
 So think of Matrix multiplication of applying one transformation then another . 
 
-- **Matrix multiplication is associative** : Means if we have 3 matrices A,B,C and then A * (B * C) = (A * B) * C , as both things saying the one thing first apply C then apply B then apply A . Simple !
+- **Matrix multiplication is associative** : Means if we have 3 matrices A,B,C and then A * (B * C) = (A * B) * C , as both things saying the one thing first apply C then apply B then apply A . Simple ! Because what it’s saying is that if you first apply (C then B), then A, it’s the same as applying C, (then B then A) . 
+
+- **Matrix Mutiplication is commutative , often** : Means if we have 2 matrices A,B then ***A * B*** not equal to ***B * A*** , but Note:  There are some examples of matrices commuting that are not commuting.
+Example :
+```
+| 0  -1 | * | -2  0 |     =  | -2  0 |   *  | 0  -1 | 
+| 1   0 |   | 0  -2 |        | 0  -2 |      | 1   0 |
+```
+
+- And scalar matrix multiplication is also commutative , means if we have 2 scalars a,b then a*b = b*a (where a is any matrix, and b is any scalar) .  
+
+- `I * any matrix = any matrix * I = any matrix` , where **I** is the identity matrix.  , so we can say its also commutative . It commutes with every other matrix . 
+
+- Since the identity matrix is always commutative and scalar-matrix multiplicative is always commutative, we know a scaling matrix is always commutative:
+***(aI)M=aMI=M(aI)*** (where *a* is scalar and M is any matrix and I is identity matrix)

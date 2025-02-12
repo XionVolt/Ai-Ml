@@ -115,7 +115,7 @@ Shoe sizes (in whole numbers) → {5, 6, 7, 8, 9}
 
 The main thing is concept !!
 
-- The Data set has one specific row for specific feature and for its corresponding target variable . 
+- The Data set has one specific row for one specific example(which includes input and its corresponding output) . 
 ```
            x  |  y
     ex1-input |  ex1_output
