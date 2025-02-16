@@ -39,3 +39,5 @@ v' = x * | a | + y * | d | + z * | g |
 **We know Each of `v` coordinates can be thought of instructions for how to scale each basis vector so when they added together they get your vector**.
 
 Multiply matrix by matrix in 3D(and above dimensions) is also same as we do in 2D . And you can think about matrix multiplication in 3D space in same way as you think in 2D space , *think of each 3D matrix as a certain transformation of in 3D space*. And *think about 3D matrix maltiplication as applying two or n number of transformations one after another on 3D space* .
+
+[Read this for understanding linear transformation from two-dimensional space to three-dimensional space, or from three-dimensions down to two it gives you basic idea about non-square matrices also](https://www.3blue1brown.com/lessons/3d-transformations#puzzle)
