@@ -336,7 +336,7 @@ This means the transformation is represented mathematically as:
 
 From the first transformation:
 ```
-| a  b |   *  | 2 |   =  | 8 |  
+| a  b |   *   | 2 |   =  | 8 |  
 | c  d |       | 3 |      | 1 |  
 ```
 
@@ -508,3 +508,4 @@ In this example, the linear transformation `L` preserves the structure of scalin
 There are few transformations that have special names : Of which two can be seen by going to these links : 
 1. [Rotation](https://www.3blue1brown.com/lessons/linear-transformations#rotation)
 2. [Shear](https://www.3blue1brown.com/lessons/linear-transformations#shear)
+

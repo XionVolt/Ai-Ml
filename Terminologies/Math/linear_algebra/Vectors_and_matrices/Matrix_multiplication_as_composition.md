@@ -41,3 +41,4 @@ Example :
 
 - Since the identity matrix is always commutative and scalar-matrix multiplicative is always commutative, we know a scaling matrix is always commutative:
 ***(aI)M=aMI=M(aI)*** (where *a* is scalar and M is any matrix and I is identity matrix)
+
