@@ -40,6 +40,6 @@ So in this way we can solve solve system of 2 equations with just vectors and ma
 - Rank simply means : Number of dimensions in the output of a transformation
 
 [Understand what is column space and null (or kernel) space](https://youtu.be/uQhTuRlWMxw?si=d733RKL5h2EJ91TI&t=532)
-- The set of all possible outputs for any matrix , whether its a line , a plane , 3D space or whatever , is called a column space of that matrix  . 
-- The set of all vectors that becomes null in the sense they land at 0 vector  is called null space . 
+- The set of all possible outputs for any matrix (when transformed) , whether its a line , a plane , 3D space or whatever , is called a column space of that matrix  . 
+- The set of all vectors that becomes null (after the transformation) in the sense they land at 0 vector is called null space . 
     - In terms of linear system of equations , when v (constant vector) happens to be zero vector , the null space gives you all of the possible solutions(means all possible values of variables vector) to the equation .
