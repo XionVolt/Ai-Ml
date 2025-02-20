@@ -11,4 +11,15 @@ Ollama is an open source tool that is designed to essentially simplify the proce
 
 [Different commands](https://youtu.be/GWB9ApTPTv4?si=z8TBayoeUjy0cfIT&t=1440)
 
+-  `ollama run model`:numB , to download model with specific parameters
+- ollama list : to list all models that you downloaded
+
+[Understand the things that `/show info` shows](https://youtu.be/GWB9ApTPTv4?si=MEEWcRP0sVfsseUp&t=2053)
+- **Model parameters** are variables that the model learns during the training process to make predictions or decisions. These parameters include weights and biases in neural networks, which are adjusted to minimize prediction errors and improve the model's performance.
+  - Model parameters can be used to measure the complexity of model , and capacity of the model to learn from the data .
+  - [Embedding length](https://youtu.be/GWB9ApTPTv4?si=slOB4oSe9EvbezMF&t=2291)
+  - [Quantization](https://youtu.be/GWB9ApTPTv4?si=YrUXLirO6dgbQjeg&t=2367)
+  
+[Some more Ollama Commands](https://youtu.be/GWB9ApTPTv4?si=jSiB47IfJ8oRa8iN&t=2640)
+
 ...topic in progress 
