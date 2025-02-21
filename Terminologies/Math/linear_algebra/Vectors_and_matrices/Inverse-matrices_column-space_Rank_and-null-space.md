@@ -32,14 +32,27 @@ So after this we can further solve equation =>
 ***b = A <sup>-1</sup> * v***
 And what this is means geometrically that you playing the transformation A in reverse (transformation in reverse has a special name ***inverse***) and then following ***v*** , and in this way ***v*** will ultimately comes in its untransformed form ( means in initial form ,***v*** before transformed) state (***b***) .
 
+- Note : The system has unique solution in only case , when determinant of the matrix is not 0 , means space not squished to a lower dimension .
+
 So in this way we can solve solve system of 2 equations with just vectors and matrix , without using elimination or substitution !
 
 [See this to understand why inverse of a matrix is not possible if determinant of the matrix is 0](https://youtu.be/uQhTuRlWMxw?si=RZ4a8Gz6d_bAWQ76&t=403)
 
 [Understand what is rank](https://youtu.be/uQhTuRlWMxw?si=9rzt-mtjb-LemMQU&t=481)
 - Rank simply means : Number of dimensions in the output of a transformation
+- The rank of the matrix tells us how many dimensions remain after transformation:
+**For example for 2D transformation**
+   - Rank 2 (full rank) → No collapse (matrix is invertible).
+   - Rank 1 → Collapse to a line.
+   - Rank 0 → Collapse to a point (zero vector).
 
-[Understand what is column space and null (or kernel) space](https://youtu.be/uQhTuRlWMxw?si=d733RKL5h2EJ91TI&t=532)
+-  Full Rank Matrix : Matrix that has full maximum rank (i.e. its rank is equal to the number of columns) 
+
+[Understand what is Column Space (Also Called the Image or Range of a Matrix) and null (or kernel) space](https://youtu.be/uQhTuRlWMxw?si=d733RKL5h2EJ91TI&t=532)
+- The span of column vectors of the matrix is called column space of that matrix.
 - The set of all possible outputs for any matrix (when transformed) , whether its a line , a plane , 3D space or whatever , is called a column space of that matrix  . 
 - The set of all vectors that becomes null (after the transformation) in the sense they land at 0 vector is called null space . 
     - In terms of linear system of equations , when v (constant vector) happens to be zero vector , the null space gives you all of the possible solutions(means all possible values of variables vector) to the equation .
+
+
+Note : Rank, Null Space, and Linear Systems are deeply explained in another markdown file .

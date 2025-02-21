@@ -7,6 +7,14 @@ The factor by which linear transformation changes any area (of the grid squares)
 ## What if determinant = 0 ?
 It means that the linear transformation squishes the area by 0 , if its then the transformation associated with that matrix squishes everything into smaller dimension . 
 
+Note : If two column vectors in a 2×2 matrix are collinear, they lie along the same line, meaning they span only 1D space instead of 2D.
+In that case also determinant is 0 .  Means transformation squishes everything into lower dimension (1D space here) .
+Since one dimension is lost, every transformed vector gets squashed onto a single line (1D instead of 2D).
+- Bascially what we wanna say above,If a transformation matrix has linearly dependent columns, its determinant is zero.
+
+And this thing apply to any dimension . If you not understand this at once try to Visualize it . 
+
+
 ## Invert orientation of space ?
 [See this video clip to understand](https://youtu.be/Ip3X9LOh2dk?si=_W2_ZuLslYlHyBng&t=230)
 
@@ -16,3 +24,5 @@ It means that the linear transformation squishes the area by 0 , if its then the
 This saying : **If you multiply two matrices together, the determinant of the resulting matrix is the same as the product of the determinants of the original two matrices.**
 
 - In python we have ***numpy.linalg.det(Matrix)*** to find determinant of matrix.
+
+
