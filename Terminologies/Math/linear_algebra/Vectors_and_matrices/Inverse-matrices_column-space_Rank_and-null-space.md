@@ -55,4 +55,4 @@ So in this way we can solve solve system of 2 equations with just vectors and ma
     - In terms of linear system of equations , when v (constant vector) happens to be zero vector , the null space gives you all of the possible solutions(means all possible values of variables vector) to the equation .
 
 
-Note : Rank, Null Space, and Linear Systems are deeply explained in another markdown file .
+Note : Rank, Null Space, and Linear Systems are deeply explained in another markdown file . What is trivial and non-trivial also explained below there . 

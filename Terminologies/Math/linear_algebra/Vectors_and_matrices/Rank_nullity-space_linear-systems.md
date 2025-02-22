@@ -161,4 +161,4 @@ A = | 1 2 |
 - **Trivial null space** (only \( x = 0 \)) → \( A \) is **invertible**.  
 - **Nontrivial null space** (more solutions exist) → \( A \) is **not invertible** (singular).  
 
-This is why **if the null space(Ax=0) is nontrivial, \( A \) is not invertible**.
+This is why **if the null space(Ax=0) is nontrivial, \( A \) is not invertible**. 
