@@ -78,7 +78,7 @@ A = | 1  -2   4  |
 
 - **Rank = 1** (all columns are multiples of each other, so only one independent column exists).
 - **Nullity = 3 - 1 = 2** (since the matrix has 3 columns).
-- The **null space is a plane** (2D space in `R^3` , where `R` is 3 dimensional real space).
+- The **null space is a plane** (2D space in <code>R<sup>3</sup></code> , where `R` is 3 dimensional real space).
 
 This means the transformation squishes 3D space **onto a line** (since rank = 1), leaving a **2D plane** as the set of solutions to `A * x = 0`.
 Basically `A * x = 0` , is a null space of `A` . 
