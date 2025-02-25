@@ -22,4 +22,9 @@ Ollama is an open source tool that is designed to essentially simplify the proce
   
 [Some more Ollama Commands](https://youtu.be/GWB9ApTPTv4?si=jSiB47IfJ8oRa8iN&t=2640)
 
+
+- [We can also modify or we can say customize our model](https://youtu.be/GWB9ApTPTv4?si=gZ2JxzTaqqTRKC4J&t=3240) because we can add certain pieces of metadata to the model to what we want it to be . 
+- Temperature in context of Model : Temperature is what allows the model to be more creative , more direct ..., More detailed explanation is in separate targeted file . 
+
+
 ...topic in progress 
