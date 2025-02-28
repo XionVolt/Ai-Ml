@@ -18,6 +18,9 @@ And this thing apply to any dimension . If you not understand this at once try t
 ## Invert orientation of space ?
 [See this video clip to understand](https://youtu.be/Ip3X9LOh2dk?si=_W2_ZuLslYlHyBng&t=230)
 
+## See why , determinant of 2d matrix is ad - bc ?
+[See this video clip to understand](https://youtu.be/Ip3X9LOh2dk?si=7epBZxUNjo9eTcrT&t=456)
+
 ## Determinant Important property
 `det(M1M2) = det(M1) * det(M2)` , where M1 and M2 are matrices
 
