@@ -4,6 +4,13 @@
 
 [How to take dot product(geometrically)](https://youtu.be/eu6i7WJeinw?si=q-K6RNPXXwFZvzzl&t=40)
 
+```python
+import numpy
+a = numpy.array([1, 2, 3])
+b = numpy.array([4, 5, 6])
+numpy.cross(a, b)
+```
+Pythonic way to compute cross product
 
 
 In cross Product(also called the perpendicular or wedge product) order of Vectors(how they multiplying) change signs .
@@ -13,6 +20,8 @@ $$
 \overrightarrow{a} \times \overrightarrow{b} = - \overrightarrow{b} \times \overrightarrow{a}
 $$
 ***If `a` is on right side then dot product is postive else negative , `a` and `b` can be any vecotor*** 
+[Btw clockwise and counter-clockwise , also the way to know if dot product is postive or negative](https://www.3blue1brown.com/lessons/cross-products#two-dimensions)
+
 
 [Remember ordering like when dot product is postive and when negative](https://youtu.be/eu6i7WJeinw?si=sPK3c7f-JxthAP-E&t=99)
 
@@ -103,4 +112,13 @@ This formula comes from the fact that the cross product gives a vector perpendic
 
 - The absolute value of the cross product represents the **parallelogram's area** formed by the two vectors.
 
+[2(v) X W  = 2(v X w)](https://youtu.be/eu6i7WJeinw?si=AdToCGzU2PK6KFen&t=277)
 
+[v×w is bigger when the vectors are more perpendicular to eachother and smaller when the vectors are pointing in a similar direction.](https://www.3blue1brown.com/lessons/cross-products#properties)
+
+[Cross Product of 3d vectors , the true cross product combines two different 3d vectors to give a new 3d vector](https://youtu.be/eu6i7WJeinw?si=OB0oKRFyU94hAnMS&t=295)
+The 3d cross product does not return a number, it returns a vector. This new vector's length will be the area of that parallelogram
+
+[Formula of computing cross product](https://www.3blue1brown.com/lessons/cross-products#computing)
+
+[The idea of Duality](https://youtu.be/BaM7OCEm3G0?si=aijBh9QAiR6epKFJ&t=125)
