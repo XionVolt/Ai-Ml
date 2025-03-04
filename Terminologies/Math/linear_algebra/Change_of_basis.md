@@ -9,4 +9,3 @@
 
 [A key feature of linear transformation that i always think of how to say in words , thanks 3blue1brown](https://youtu.be/P2LTAUO1TdA?si=qpmqPwD1IkwofH-O&t=377)
 
-<!-- [H](https://youtu.be/P2LTAUO1TdA?si=Nxu3lUTpQtOeayrN&t=437) -->

@@ -31,7 +31,10 @@ ModelFile explained in detail in separatefile named `modefile-customizeModel.md`
 
 ollama serve at some end point locally , and it all serve at localhost:11434 , that means we can generate the response using rest Api
 
-So we can generate response using rest api 
+[See this clip](https://youtu.be/yPphKQp1fqE?si=2UHUGvkoK7Yx4kPw&t=907)
+
+So we can generate response using rest api , we have two endpoints for making request to ollama , one is `api/generate` and other is `api/chat`
+
 
 ```bash
 curl http://localhost:11434/api/generate -d '{ "model":"llama3.2"
@@ -52,8 +55,10 @@ curl -Uri "http://localhost:11434/api/generate" -Method Post -Body
 python can also be used for sending the request to llm and get response
 
 
+
 ```python
 import requests
+import json
 re = requests.post("http://localhost:11434/api/generate", json={"model": "llama3.2", "prompt": "Hello, how are you?","stream": False})  """ Ollama supports 
 "stream": False" in the JSON payload, 
 which makes it return the full response at once. 
@@ -62,8 +67,93 @@ which makes it return the full response at once.
 in our case, Ollama's /api/generate returns a streaming response by default, so even if you set stream=False in parameter, 
 it won't work as ollama will still return a streaming response . """
 
-print(re.text)
+# convert json to dictionary
+response_in_dict = json.loads(re.text)
+print(response_in_dict['response']) # actual response text is in key 'response'
   
 ```
 
+# Now we have two endpoints for making request to ollama , one is `api/generate` and other is `api/chat`
+Let's see difference between them and see how each one works :
+## ✅ 1. /api/generate (For Single-Prompt Generation)
+- Generates a response for a single prompt.
+- Does not maintain chat history—each request is independent.
+- Suitable for one-time queries or single-response completions.
+
+### Example Usage (Python)
+```python
+import requests
+
+response = requests.post(
+    "http://localhost:11434/api/generate",
+    json={"model": "llama3", "prompt": "What is AI?", "stream": False}
+)
+
+print(response.json())  # Full response
+```
+
+### Response Format
+```json
+{
+  "response": "AI stands for Artificial Intelligence...",
+  "model": "llama3",
+  "done": true
+}
+```
+
+## ✅ 2. /api/chat (For Multi-Turn Conversations)
+- Used for chat-based interactions.
+- Can Maintains chat history(if we make that kind of functionality) for context-aware responses.
+- Suitable for conversational AI.
+
+### Example Usage (Python)
+```python
+import requests
+
+chat_history = [
+    {"role": "system", "content": "You are a helpful assistant."},
+    {"role": "user", "content": "What is AI?"}
+]
+
+response = requests.post(
+    "http://localhost:11434/api/chat",
+    json={"model": "llama3", "messages": chat_history, "stream": False}
+)
+
+print(response.json())  # Full response
+```
+
+### Response Format
+```json
+{
+  "message": {
+    "role": "assistant",
+    "content": "AI stands for Artificial Intelligence..."
+  },
+  "model": "llama3",
+  "done": true
+}
+```
+- The response includes `role: assistant`, indicating the bot's reply.
+- This can be used in a loop to maintain conversation history.
+
+## 🔥 Key Differences:
+| Feature             | /api/generate | /api/chat |
+|---------------------|--------------|-----------|
+| **Single-turn response** | ✅ Yes | ❌ No |
+| **Multi-turn chat** | ❌ No | ✅ Yes |
+| **Can Maintains history(if we make that kind of functionality)** | ❌ No | ✅ Yes , Chat history maintains on the client side |
+| **Use case** | Standalone prompts | Conversational AI |
+
+## 🏆 Which One Should You Use?
+- **If you need a single response** → Use **/api/generate**.
+- **If you are building a chatbot** → Use **/api/chat**.
+
+***Note : Again , Ollama /api/chat does NOT store chat history internally by itself.
+      You must maintain and send chat history in every request that allows full control over the conversation memory.
+      If you send only the current message without past history, Ollama will respond without context (just like /api/generate).*** 
+
+
+
+- Python and Node.js code for sending the request to llm and get response is available in separate files
 ...topic in progress 
