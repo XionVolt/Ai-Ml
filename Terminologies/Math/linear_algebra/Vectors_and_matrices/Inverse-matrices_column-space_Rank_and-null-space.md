@@ -41,17 +41,19 @@ So in this way we can solve solve system of 2 equations with just vectors and ma
 [Understand what is rank](https://youtu.be/uQhTuRlWMxw?si=9rzt-mtjb-LemMQU&t=481)
 - Rank simply means : Number of dimensions in the output of a transformation
 - The rank of the matrix tells us how many dimensions remain after transformation:
+- For example : When the output of a transformation is a line, means its 1 dimensional, we say transformation has a rank of one . One more example : If all vectors land on some 2d plane, we say transformation has a rank of 2 .
 **For example for 2D transformation**
    - Rank 2 (full rank) → No collapse (matrix is invertible).
    - Rank 1 → Collapse to a line.
    - Rank 0 → Collapse to a point (zero vector).
 
 -  Full Rank Matrix : Matrix that has full maximum rank (i.e. its rank is equal to the number of columns) 
+- For a full rank transformation, the only vector that land at origin is the zero vector itself. [But for matrices that aren't full rank, which squish to a lower dimension,the null space(the vector that land at origin) are some other vectors too along with zero vector](https://youtu.be/uQhTuRlWMxw?si=27DDhIKkz9ilD17W&t=595)
 
 [Understand what is Column Space (Also Called the Image or Range of a Matrix) and null (or kernel) space](https://youtu.be/uQhTuRlWMxw?si=d733RKL5h2EJ91TI&t=532)
 - The span of column vectors of the matrix is called column space of that matrix.
 - The set of all possible outputs for any matrix (when transformed) , whether its a line , a plane , 3D space or whatever , is called a column space of that matrix  . 
-- The set of all vectors that becomes null (after the transformation) in the sense they land at 0 vector is called null space . 
+- The set of all vectors that becomes null (after the transformation) in the sense they land at 0 vector is called null space(or kernel) of your matrix . 
     - In terms of linear system of equations , when v (constant vector) happens to be zero vector , the null space gives you all of the possible solutions(means all possible values of variables vector) to the equation .
 
 

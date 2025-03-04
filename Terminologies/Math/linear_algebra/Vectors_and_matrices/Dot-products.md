@@ -22,7 +22,7 @@ v =  | 4 |
 where a is any matrix  representing a linear transformation that takes a 2d vector from the input space and gives a number to the output space .
 
 ```
-a * v Same as  taking dot product by making matrix column vector .
+a * v Same as multiplying matrix `a` by a vector `v` by making matrix column vector or make a vector `v` a row vector .
 means a * v same as doing this : | 1 | * | 4 |
                                  | 2 |   | 3 |
 so in this way also we can find where our 2D vector(v) lands in output space .
