@@ -38,3 +38,4 @@ So from these formulas we get EigenValue(lambda) and then we can find EigenVecto
 And Note : Lambda is EigenValue only if determinant of a matrix happens to be 0
 
 [See this example so things become clear](https://youtu.be/PFDu9oVAE-g?si=xCtt1tyCbLkfMwxv&t=570)
+
