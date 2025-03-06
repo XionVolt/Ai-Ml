@@ -31,11 +31,54 @@ So from start our formula comes like this :
 1. `A` `v` = `lambda` * `v`
 2. `A` `v` - `lambda` * `I` * `v` = `0`
 3. (`A` - `lambda` * `I`) * `v` = `0` (By taking `v` a common)
-4. det(`A` - `lambda` * `I`) = `0` 
+4. det(`A` - `lambda` * `I`) = `0` (This gives us a system where we can solve for 
+λ by setting 
+det
+(
+𝐴
+−
+𝜆
+𝐼
+)
+=
+0
 
-So from these formulas we get EigenValue(lambda) and then we can find EigenVector (v)
 
-And Note : Lambda is EigenValue only if determinant of a matrix happens to be 0
+so from the last formula we get EigenValue(lambda) and then we can find EigenVector (v)
+#### Now you probably think why only diagonal elements are subtracted from lambda : 
+
+- This is simply because in this last formula we first multiply `lambda` by `I` 
+- `I` become scalar matrix(or it may remain identity matrix if `lambda` is a one) and we know all its elements are equal **but its non-diagonal elements are zero** 
+- So actually we are just subtracting two matrixes `A` - `I` , so its obvious that only diagonal elements subtraction makes sense because all the non diagonal elements are zero so subtraction them makes no sense
+
+That `I` matrix is like this after scale or squish by lambda(assume its in 2d ) :
+```
+| 𝜆  0 | 
+| 0  𝜆 |
+```
+And we are just subtracting (`A`(some transformation matrix) - `I`) like this :
+```
+| a b | -  | 𝜆  0 |  =  | a - 𝜆   b |
+| c d |    | 0  𝜆 |     | c   d - 𝜆 |
+```
+- So as you can see above that's why we just subtract only diagonal elements of transformation matrix `A` , because in real its `A` - `I` is happening .
+- Now By doing this we get some Quadratic polynomial - 
+```
+ad-bc = 0
+= (a-λ)(d-λ) - bc = 0 
+```
+After solving this equation we get EigenValue(lambda) , and its easy peasy after to find EigenVector(v) using EigenValue(lambda)
+
+
+And Note : 
+- Lambda is EigenValue only if determinant of a matrix happens to be 0
+- The fact that polynomial doesn't have real roots means there are no EigenVectors of that matrix
 
 [See this example so things become clear](https://youtu.be/PFDu9oVAE-g?si=xCtt1tyCbLkfMwxv&t=570)
+[Basically this is how you can get EigenValue by Quadratic Equation](https://youtu.be/PFDu9oVAE-g?si=yegSc9k489hqzk4w&t=592)
 
+[What if transformation doesn't have eigenVectors](https://youtu.be/PFDu9oVAE-g?si=1cxAd5DF_uTQtdQg&t=647)
+
+[A single eigenValue can have more that a line full of eigenVectors](https://youtu.be/PFDu9oVAE-g?si=rf3lx1oE0F4EM9I_&t=745)
+
+[EigenBasis](https://youtu.be/PFDu9oVAE-g?si=49vxVa30HKtXV5p_&t=782)

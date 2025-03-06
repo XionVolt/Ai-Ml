@@ -117,7 +117,7 @@ For a **square matrix \( A \) (n × n)**, the ability to **invert it** depends o
 - If **the null space is nontrivial** (contains nonzero solutions), then:
   - \( A x = 0 \) has **infinite solutions**.
   - The columns of \( A \) are **linearly dependent**.
-  - \( A \) is **not invertible** (singular matrix).  
+  - \( A \) is **not invertible** (singular matrix((i.e., its determinant must be 0))).  
 
 ---
 
