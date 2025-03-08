@@ -67,7 +67,7 @@ And we are just subtracting (`A`(some transformation matrix) - `I`) like this :
 ad-bc = 0
 = (a-λ)(d-λ) - bc = 0 
 ```
-After solving this equation we get EigenValue(lambda) , and its easy peasy after to find EigenVector(v) using EigenValue(lambda)
+After solving this equation we get EigenValue(lambda) , and its easy peasy after to find EigenVector(v) using that EigenValue(lambda)
 
 
 And Note : 
@@ -82,3 +82,25 @@ And Note :
 [A single eigenValue can have more that a line full of eigenVectors](https://youtu.be/PFDu9oVAE-g?si=rf3lx1oE0F4EM9I_&t=745)
 
 [EigenBasis](https://youtu.be/PFDu9oVAE-g?si=49vxVa30HKtXV5p_&t=782)
+
+Any time a matrix has zeros everywhere other than the diagonal, it's called a "diagonal matrix", and the way to interpret it is that all the basis vectors are eigenvectors, and the diagonal entries of the matrix give you their corresponding eigenvalues.
+Example of such matrix:
+```
+|  7   0   0   0  |
+|  0   5   0   0  |
+|  0   0   5   0  |
+|  0   0   0   7  |
+
+```
+
+There are a number of things that make diagonal matrices nicer to work with. One big one is that it's easier to compute what will happen if you multiply this matrix by itself a whole bunch of times.
+[Example](https://youtu.be/PFDu9oVAE-g?si=xeBJz9Q679mtrylK&t=837)
+
+[How to describe same transformation but in different coordinate system which have EigenVectors have its columns (basis vectors)](https://youtu.be/PFDu9oVAE-g?si=2dFi2OtfmBCvO7H3&t=899)
+
+[But What's the motive of doing this (first choose the different basis for your coordinate system  ,then make the matrix whose columns are those EigenVectors, then describe the transformation in terms of that matrix(coordinate system))](https://youtu.be/PFDu9oVAE-g?si=dNtVw9BSRGfzdYE4&t=940)
+- The whole point of doing this with EigenVectors is that this new matrix is guaranteed to to be diagonal matrix with its cooresponding eigenValues on the diagonal.This is because it represents working in a coordinate system where what happens to basis vectors is that they get scaled during the transformation . 
+***''*** **A set of basis vecotrs which are eigenVectors is called, EigenBasis** ***''***
+[Example of its use case](https://youtu.be/PFDu9oVAE-g?si=CPvhTa7SWQtb81nk&t=964)
+
+[But Note: You can't do this with all transformations: A shear for example doesn't have enough eigenVectors to span the full space](https://youtu.be/PFDu9oVAE-g?si=Wq9CIybH3P4Ssirz&t=976)

@@ -1,7 +1,7 @@
 [Numerical Method of dot Product](https://www.3blue1brown.com/lessons/dot-products#numerical-method)
 - Numerically, if you have two vectors of the same dimension, two lists of numbers with the same lengths, taking their dot product means pairing up all the coordinates, multiplying those pairs together, and adding the result.
 
-[Geometric-interpretation](https://www.3blue1brown.com/lessons/dot-products#geometric-interpretation)
+[Geometric-interpretation](https://youtu.be/LyGKycYT2v0?si=HnuKVmH5HFIBR_ku)
 
 Important points: 
 - v.w = w.v (where v and w are vectors)

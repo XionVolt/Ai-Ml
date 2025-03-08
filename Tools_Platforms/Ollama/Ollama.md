@@ -153,7 +153,15 @@ print(response.json())  # Full response
       You must maintain and send chat history in every request that allows full control over the conversation memory.
       If you send only the current message without past history, Ollama will respond without context (just like /api/generate).*** 
 
-
+[Github docs to explore different endpoints of ollama and to see how each one works , basically what we did using commands in cli can also be done using rest api](https://github.com/ollama/ollama/blob/main/docs/api.md)
 
 - Python and Node.js code for sending the request to llm and get response is available in separate files
+
+## So what we observe is that there are different ways to interact with Ollama and its models :
+1. CLI - Command Line Interface (Already saw) 
+2. Ui-based Interface (now see)
+3. API (Already saw)
+4. Ollama Python Library (will see after ui-based interface)
+### So now we can also use msty.app for interact with ollama and its models (for accesing through ui)
+[See this clip to understand how to use msty.app](https://youtu.be/GWB9ApTPTv4?si=5itT4qt1hdN8hA5a&t=4385)
 ...topic in progress 

@@ -71,7 +71,7 @@ You can add more `PARAMETER` settings to customize your model further:
    - How It Works:
         - repetition_penalty > 1.0 (e.g., 1.2) → Reduces repetitive words/phrases by penalizing already used tokens.
         - repetition_penalty = 1.0 → No penalty (default behavior).
-        - repetition_penalty < 1.0 (e.g., 0.8) → Increases repetitiveness, making the model more likely to reuse      - words.
+        - repetition_penalty < 1.0 (e.g., 0.8) → Increases repetitiveness, making the model more likely to reuse words.
 
 ### **Performance Optimization**
 - `PARAMETER context_length 4096` → Sets context window size (affects memory usage).

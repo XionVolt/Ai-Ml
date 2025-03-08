@@ -1,9 +1,15 @@
 import requests
-import json
+# import json , so we can also use JSON.loads() to convert string to json format
+# in json we can also explicitely tell that give response in json format("format":"json") , but it does by ollama itself so we don't need to do it explicitely 
 re = requests.post("http://localhost:11434/api/generate", json={"model": "llama3.2", "prompt": "Hello, how are you?","stream": False})  
+print(re.json()) 
 
 
-print(json.loads(re.text)['response'])
+
+
+
+
+# We can also request a data in json , from a model like this , so instead of converting response to json explicitely we can specify it in request
 
 
 
