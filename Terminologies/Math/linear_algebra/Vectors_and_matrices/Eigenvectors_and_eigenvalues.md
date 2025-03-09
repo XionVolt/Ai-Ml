@@ -62,13 +62,13 @@ And we are just subtracting (`A`(some transformation matrix) - `I`) like this :
 | c d |    | 0  𝜆 |     | c   d - 𝜆 |
 ```
 - So as you can see above that's why we just subtract only diagonal elements of transformation matrix `A` , because in real its `A` - `I` is happening .
-- Now By doing this we get some Quadratic polynomial - 
+- Now By doing this we get some Quadratic polynomial(Also known as `Characteristic Polynomial` of matrix) - 
 ```
 ad-bc = 0
 = (a-λ)(d-λ) - bc = 0 
 ```
-After solving this equation we get EigenValue(lambda) , and its easy peasy after to find EigenVector(v) using that EigenValue(lambda)
 
+After solving this equation we get EigenValue(lambda) , and its easy peasy after to find EigenVector(v) using that EigenValue(lambda)
 
 And Note : 
 - Lambda is EigenValue only if determinant of a matrix happens to be 0
