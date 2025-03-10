@@ -72,7 +72,7 @@ This is the **quadratic equation** for eigenvalues.
 
 We define:
 
-- **`m`** (Mean of diagonal elements / half of trace):
+- **`m`** (Mean of diagonal elements): So  here `𝑚` represents the average or center value of the eigenvalues.
 
 ```math
  m = \frac{a + d}{2}
@@ -134,9 +134,14 @@ We define:
 ```math
  d^2 = m^2 - p
 ```
-***d(discriminant) -> here deviation of eigenvalues from m***
+***d(deviation) -> here deviation of eigenvalues from m , but Note:***
 
-which gives:
+```math
+ d^2 = m^2 - p
+ ```    
+ ***is just a convenient notation, not the actual discriminant. d helps simplify the eigenvalues `λ=m±d`***
+
+now it gives:
 
 ```math
  d = \sqrt{m^2 - p}
@@ -160,7 +165,7 @@ This approach simplifies eigenvalue calculations and provides an easy way to vis
 
 # **Understanding Deviation of Eigenvalues from \( m \)**
 
-## **1. What is \( m \)?**
+## **1. Again What is \( m \)?**
 \( m \) is the average of the diagonal elements (trace divided by dimension).  
 For a **\( 2 X 2 \)** matrix:
 
@@ -252,6 +257,8 @@ d = \sqrt{m^2 - p} = \sqrt{7^2 - 40} = \sqrt{49 - 40} = \sqrt{9} = 3
 ```math
 \pm 3
 ```
+- λ<sub>1</sub> =m+d (the larger eigenvalue)
+- λ<sub>2</sub> =m-d (the smaller eigenvalue)
 - So, eigenvalues **move from 7 to 10 and 4**.
 
 ## **5. Visual Representation**
@@ -260,8 +267,13 @@ Eigenvalues:  4       7       10
               |-------|-------|
          -3  (Deviation)  +3
 ```
+[Another Example from 3blue1brown](https://youtu.be/e50Bj7jn9IQ?si=t3dS4xx0EHjtEafh&t=296)
 
 ## **6. Why is Deviation Important?**
 - Helps understand the **spread of eigenvalues**.
 - If deviation is **zero**, eigenvalues are the same.
 - If deviation is **negative**, eigenvalues are **complex**.
+
+So this concept of center (m) and deviation (d) is mostly useful when we have only two eigenvalues
+
+[Real application of this computation trick](https://youtu.be/e50Bj7jn9IQ?si=4mavFkpGYej8siyB&t=426)
