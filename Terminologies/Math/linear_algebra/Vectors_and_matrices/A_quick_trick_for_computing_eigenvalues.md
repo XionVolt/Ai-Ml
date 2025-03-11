@@ -277,3 +277,7 @@ Eigenvalues:  4       7       10
 So this concept of center (m) and deviation (d) is mostly useful when we have only two eigenvalues
 
 [Real application of this computation trick](https://youtu.be/e50Bj7jn9IQ?si=4mavFkpGYej8siyB&t=426)
+
+[If your matrix is diagonal matrix , you obviously don't have to compute also , as those values in diagonal are themselves eigenvalues](https://youtu.be/e50Bj7jn9IQ?si=wls_HfNLQ1zKeeSI&t=552)
+
+[Mean product formula is not characteristic different from characteristic polynomial , Mean product formula is just a nicer way to solve quadratics](https://youtu.be/e50Bj7jn9IQ?si=5pCZkYijivFlfIuL&t=627)
