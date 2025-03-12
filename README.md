@@ -23,6 +23,7 @@ The repo is organized to keep things clean and accessible:
 │-- 📂 Models  # Implementations of ML models, from basics to advanced
 │-- 📂 Resources  # Links to useful articles, books, papers, and tutorials
 │-- 📂 Programming # Include modules / libraries / frameworks that used in Ai/Ml```
+```
 
 ## 🧠 Topics to Be Covered (Beginner-Friendly Path)
 ***Here’s a structured learning path I’ll follow and following as a beginner in AI/ML: (Currently doing Linear Algebra Stuff , will learn about lot of Ai/Ml terminologies very soon !)***

@@ -1,6 +1,7 @@
 # What is Ollama ?
 Ollama is an open source tool that is designed to essentially simplify the process of running LLM locally meaning on your hardware. 
 [Resource for learning about Ollama](https://youtu.be/GWB9ApTPTv4?si=t_BxY0x4EAc2cL6v)
+- [But let's see first , what model is](https://youtu.be/2Pm93agyxx4?si=l13rVLeWJY14w-pM&t=188) 
 - Ollama provides a straightforward way to download run and interact with various models or LLMs without us having to rely on cloud based services .
 
 [What problems ollama solves ?](https://youtu.be/GWB9ApTPTv4?si=ST0YqXhx07bcZY4s&t=530)
@@ -18,8 +19,9 @@ Ollama is an open source tool that is designed to essentially simplify the proce
 - **Model parameters** are variables that the model learns during the training process to make predictions or decisions. These parameters include weights and biases in neural networks, which are adjusted to minimize prediction errors and improve the model's performance.
   - Model parameters can be used to measure the complexity of model , and capacity of the model to learn from the data .
   - [Embedding length](https://youtu.be/GWB9ApTPTv4?si=slOB4oSe9EvbezMF&t=2291)
-  - [Quantization](https://youtu.be/GWB9ApTPTv4?si=YrUXLirO6dgbQjeg&t=2367)
-  
+  - [Quantization](https://youtu.be/2Pm93agyxx4?si=OkesFUzR0zhbGsul&t=236)
+      - [Quantization in short](https://youtu.be/GWB9ApTPTv4?si=YrUXLirO6dgbQjeg&t=2367)
+
 [Some more Ollama Commands](https://youtu.be/GWB9ApTPTv4?si=jSiB47IfJ8oRa8iN&t=2640)
 
 
@@ -27,6 +29,12 @@ Ollama is an open source tool that is designed to essentially simplify the proce
 - Temperature in context of Model : Temperature is what allows the model to be more creative , more direct ..., More detailed explanation is in separate targeted file . 
 - Basically we can also set different parameters for our Ml Model in separate file , for customize(fine tune) the model according to our needs
 ModelFile explained in detail in separatefile named `modefile-customizeModel.md`
+
+- Run this command to see modelfile of your llm
+```powershell
+ollama show --modelfile  <model-name>
+````
+
 
 
 ollama serve at some end point locally , and it all serve at localhost:11434 , that means we can generate the response using rest Api
@@ -163,5 +171,6 @@ print(response.json())  # Full response
 3. API (Already saw)
 4. Ollama Python Library (will see after ui-based interface)
 ### So now we can also use msty.app for interact with ollama and its models (for accesing through ui)
-[See this clip to understand how to use msty.app](https://youtu.be/GWB9ApTPTv4?si=5itT4qt1hdN8hA5a&t=4385)
-...topic in progress 
+
+[See this clip to understand how to use msty.app]
+(https://youtu.be/GWB9ApTPTv4?si=5itT4qt1hdN8hA5a&t=4385)
