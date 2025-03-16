@@ -1,7 +1,14 @@
 # What is Ollama ?
 Ollama is an open source tool that is designed to essentially simplify the process of running LLM locally meaning on your hardware. 
 [Resource for learning about Ollama](https://youtu.be/GWB9ApTPTv4?si=t_BxY0x4EAc2cL6v)
-- [But let's see first , what model is](https://youtu.be/2Pm93agyxx4?si=l13rVLeWJY14w-pM&t=188) 
+- [But let's see first , what model is](https://youtu.be/2Pm93agyxx4?si=l13rVLeWJY14w-pM&t=188)
+An AI model is a program trained on data to make its own decisions and predictions using new data without human intervention. It uses algorithms to find patterns and make predictions based on the data it has been trained on.<br>
+A model can also be considered a collection of nodes that work together to process and analyze data
+- Parameters can be thought of collection of weights of biases (basically they are the variables that model learn during the training process). Once the model is developed(means file) that file each parameter is represented by 16 to 32 bits 
+    - So for example if model is ollama:8b means model has 8 billion params and each represented have precision of 32bit, then that model will take 4bytes(32/8 = 4bytes) * 8billion = 32gb of vram to run. 
+      - But if we qunatized our parameter to 4bits, it will then roughly take 4 to 5gigabyte of vram require to run a model
+
+
 - Ollama provides a straightforward way to download run and interact with various models or LLMs without us having to rely on cloud based services .
 
 [What problems ollama solves ?](https://youtu.be/GWB9ApTPTv4?si=ST0YqXhx07bcZY4s&t=530)
@@ -21,6 +28,14 @@ Ollama is an open source tool that is designed to essentially simplify the proce
   - [Embedding length](https://youtu.be/GWB9ApTPTv4?si=slOB4oSe9EvbezMF&t=2291)
   - [Quantization](https://youtu.be/2Pm93agyxx4?si=OkesFUzR0zhbGsul&t=236)
       - [Quantization in short](https://youtu.be/GWB9ApTPTv4?si=YrUXLirO6dgbQjeg&t=2367)
+
+- ***Context window***(or context size) - A ***context window*** in large language models (LLMs) **is the maximum number of tokens the model can process at once**, acting as its short-term memory capacity.
+ This window determines how much information the model can consider when generating responses, impacting its ability to produce coherent and contextually relevant outputs.
+ Larger context windows allow for more extensive inputs, enhancing the model's performance in tasks that require understanding of the full context, such as in-context learning.
+ However, increasing the context window size also introduces challenges like higher computational demands and maintaining accuracy over longer text spans.
+
+   - By default, Ollama models operate with a context window size of 2048 tokens.
+This setting can be adjusted to accommodate more extensive input data, which is particularly useful for complex queries or when handling larger datasets.2048 tokens means if your input goes larger than 2048 tokens, the model will start to forget the previous tokens and will start to generate the response based on the new tokens.
 
 [Some more Ollama Commands](https://youtu.be/GWB9ApTPTv4?si=jSiB47IfJ8oRa8iN&t=2640)
 

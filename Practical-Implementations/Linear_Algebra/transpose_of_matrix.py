@@ -57,4 +57,30 @@ print("Original Matrix:")
 print(matrix)
 
 print("\nTransposed Matrix:")
-print(transposed_matrix)
+print('tansposed matrix using numpy',transposed_matrix)
+
+
+# We also have another way to transpose matrix, numpy.transpose()
+""" With the help of Numpy numpy.transpose(), We can perform the simple function of transpose within one line by using numpy.transpose() method of Numpy. It can transpose the 2-D arrays on the other hand it has no effect on 1-D arrays. This method transpose the 2-D numpy array. """
+
+# Parameters: 
+"""
+axes :tuple or list of ints, optional
+If specified, it must be a tuple or list or int which contains a permutation of [0, 1, …, N-1] where N is the number of axes of a. Negative indices can also
+be used to specify axes. The i-th axis of the returned array will correspond to the axis numbered axes[i] of the input. If not specified, 
+defaults to [axis for axis in range(a.ndim)][::-1], which reverses the order of the axes.
+
+Returns: ndarray 
+a matrix with its axes permuted. A view is returned whenever possible.
+"""
+
+gfg = np.array([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
+ 
+# before transpose
+print('\n before transpose\n',gfg, end ='\n\n')
+
+""" after transpose, we give(optionally,because by default it is also(1,0)) (1,0) coz it means 3 rows and 2 columns as 
+1 pointing to axis of untransposed matrix columns and 0 pointing to axis row of untransposed matrix rows """
+print('\n after transpose\n',gfg.transpose(1, 0), end ='\n\n')

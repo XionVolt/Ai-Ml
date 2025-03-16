@@ -1,6 +1,6 @@
 [Documentation by 3blue1brown](https://www.3blue1brown.com/lessons/cross-products)
 
-[See video for visualization by 3blue1brown](https://www.youtube.com/watch?v=8O7yCjF4XU0)
+[See video for visualization by 3blue1brown](https://youtu.be/eu6i7WJeinw?si=T_etEcREf6wtHgSN)
 
 [How to take dot product(geometrically)](https://youtu.be/eu6i7WJeinw?si=q-K6RNPXXwFZvzzl&t=40)
 
@@ -19,11 +19,11 @@ Example:
 $$
 \overrightarrow{a} \times \overrightarrow{b} = - \overrightarrow{b} \times \overrightarrow{a}
 $$
-***If `a` is on right side then dot product is postive else negative , `a` and `b` can be any vecotor*** 
-[Btw clockwise and counter-clockwise , also the way to know if dot product is postive or negative](https://www.3blue1brown.com/lessons/cross-products#two-dimensions)
+***If `a` is on left side then cross product is postive else negative , `a` and `b` can be any vecotor*** 
+[Btw clockwise and counter-clockwise, also the way to know if cross product is postive or negative](https://www.3blue1brown.com/lessons/cross-products#two-dimensions)
 
 
-[Remember ordering like when dot product is postive and when negative](https://youtu.be/eu6i7WJeinw?si=sPK3c7f-JxthAP-E&t=99)
+[Remember ordering like when cross product is postive and when negative](https://youtu.be/eu6i7WJeinw?si=sPK3c7f-JxthAP-E&t=99)
 
 Note : [***a***X***b***(Cross Product) can also be find using determinant , by placing ***a*** and ***b*** in 2x2 matrix columns](https://youtu.be/eu6i7WJeinw?si=jQt02iTQzwCA2OPJ&t=157) **This is because determinant is just how much area formed by 2 vectors , or we can also say , ***The factor by which linear transformation changes any area (of the grid squares)*****
 
@@ -94,9 +94,52 @@ Area = |Ax * By - Ay * Bx|
 
 For 3D vectors:
 
-Area = sqrt((Ay * Bz - Az * By)^2 + (Ax * Bz - Az * Bx)^2 + (Ax * By - Ay * Bx)^2)
+Area : $\sqrt{(Ay * Bz - Az * By)^2 + (Ax * Bz - Az * Bx)^2 + (Ax * By - Ay * Bx)^2}$
+***This formula comes from the fact that the cross product gives a vector perpendicular to A and B, whose magnitude represents the parallelogram's area.***
 
-This formula comes from the fact that the cross product gives a vector perpendicular to A and B, whose magnitude represents the parallelogram's area.
+But If you were looking for the actual cross product vector, you would drop the square root and keep the individual components, here's how it looks:
+```math
+\mathbf{A} \times \mathbf{B} =
+\begin{bmatrix} A_x \\ A_y \\ A_z \end{bmatrix}
+\times
+\begin{bmatrix} B_x \\ B_y \\ B_z \end{bmatrix}
+=
+\begin{bmatrix}
+A_y B_z - A_z B_y \\
+A_z B_x - A_x B_z \\
+A_x B_y - A_y B_x
+\end{bmatrix}
+```
+
+Alternatively, using the determinant notation:
+
+```math
+\mathbf{A} \times \mathbf{B} =
+\begin{vmatrix}
+\mathbf{i} & \mathbf{j} & \mathbf{k} \\
+A_x & A_y & A_z \\
+B_x & B_y & B_z
+\end{vmatrix}
+```
+
+Expanding this determinant:
+
+```math
+(A_y B_z - A_z B_y) \mathbf{i}
+- (A_x B_z - A_z B_x) \mathbf{j}
++ (A_x B_y - A_y B_x) \mathbf{k}
+```
+
+So, the result is the vector:
+
+```math
+\mathbf{A} \times \mathbf{B} =
+\begin{bmatrix}
+A_y B_z - A_z B_y \\
+A_z B_x - A_x B_z \\
+A_x B_y - A_y B_x
+\end{bmatrix}
+```
 
 ---
 
@@ -108,7 +151,7 @@ This formula comes from the fact that the cross product gives a vector perpendic
 
   |A x B| = |A| |B| sin(theta)
   
-  where theta is the angle between the vectors.
+  where theta is the angle between the vectors, and |A| and |B| are the magnitudes of the vectors.
 
 - The absolute value of the cross product represents the **parallelogram's area** formed by the two vectors.
 
@@ -117,7 +160,7 @@ This formula comes from the fact that the cross product gives a vector perpendic
 [v×w is bigger when the vectors are more perpendicular to eachother and smaller when the vectors are pointing in a similar direction.](https://www.3blue1brown.com/lessons/cross-products#properties)
 
 [Cross Product of 3d vectors , the true cross product combines two different 3d vectors to give a new 3d vector](https://youtu.be/eu6i7WJeinw?si=OB0oKRFyU94hAnMS&t=295)
-The 3d cross product does not return a number, it returns a vector. This new vector's length will be the area of that parallelogram
+The 3d cross product does not return a number, it returns a vector. That new vector's length will be the area of that parallelogram
 
 [Formula of computing cross product](https://www.3blue1brown.com/lessons/cross-products#computing)
 
