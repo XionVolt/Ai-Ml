@@ -83,7 +83,7 @@ The result is the vector **(-3, 6, -3)**.
 
 The magnitude of the cross product of two vectors gives the **area of the parallelogram** formed by them.
 
-### How to Find the Area of a Parallelogram
+### How to Find the area of a parallelogram 
 For two vectors A and B, the area of the parallelogram they form is given by:
 
 Area = |A x B|
@@ -94,7 +94,7 @@ Area = |Ax * By - Ay * Bx|
 
 For 3D vectors:
 
-Area : $\sqrt{(Ay * Bz - Az * By)^2 + (Ax * Bz - Az * Bx)^2 + (Ax * By - Ay * Bx)^2}$
+Area of parallelogram formed by $A$ and $B$(where $A$ and $B$ are 3d vectors) : $A \times B = (A_yB_z - A_zB_y)i + (A_zB_x - A_xB_z)j + (A_xB_y - A_yB_x)k$
 ***This formula comes from the fact that the cross product gives a vector perpendicular to A and B, whose magnitude represents the parallelogram's area.***
 
 But If you were looking for the actual cross product vector, you would drop the square root and keep the individual components, here's how it looks:
@@ -129,6 +129,14 @@ Expanding this determinant:
 - (A_x B_z - A_z B_x) \mathbf{j}
 + (A_x B_y - A_y B_x) \mathbf{k}
 ```
+***Now you say, why each cofactor is multiplied by a unit vector?***
+
+Because Each of the 2×2 determinants (minors) computes a scalar value that corresponds to a component of the final vector. However, since the result of a cross product is a vector, we must associate each of these computed values with their respective unit vector direction: 
+- The determinant $(A_yB_z - A_zB_y)$ gives the x-component $\rightarrow$ It must be multiplied by $\hat{i}$, means scaling $\hat{i}$ with some value.
+- The determinant $(A_zB_x - A_xB_z)$ gives the y-component $\rightarrow$ It must be multiplied by $\hat{j}$ , means scaling $\hat{j}$ with some value.
+- The determinant $(A_xB_y - A_yB_x)$ gives the z-component $\rightarrow$ It must be multiplied by $\hat{k}$ , means scaling $\hat{k}$ with some value.
+
+**So its more for convention, to know which component is which.**
 
 So, the result is the vector:
 
@@ -143,6 +151,24 @@ A_x B_y - A_y B_x
 
 ---
 
+## 4. Volume of Parallelepiped
+
+- Volume of parallelepiped formed by $A$ , $B$ and $C$(where $A$ , $B$ and $C$ are 3d vectors) :
+
+   - $C \cdot (A \times B) = (A_yB_z - A_zB_y)C_x + (A_zB_x - A_xB_z)C_y + (A_xB_y - A_yB_x)C_z$
+
+     - ***This formula is expansion of scalar triple product $C⋅(A×B)$.*** 
+- It gives us the signed volume of parallelepiped.
+   - "Signed" means that the scalar triple product $C \cdot (A \times B)$ can be positive or negative depending on the orientation of the vectors. The sign tells us about the handedness (orientation) of the coordinate system formed by $A$, $B$ and $C$.
+       - Positive sign: Indicates a right-handed orientation.
+       - Negative sign: Indicates a left-handed orientation.
+  
+- When you're interested in the actual volume of the parallelepiped, you take the absolute value of the scalar triple product:
+  - Volume = $|C \cdot (A \times B)|$
+     - Basically this ensures the volume is always a non-negative quantity, regardless of the sign produced by the scalar triple product.
+- [Visualization of scalar triple product](https://youtu.be/BaM7OCEm3G0?si=6c2XIs-eDcbOik7S&t=615)
+- [This is the same thing taking dot product between $\begin{bmatrix} x \\ y \\ z \end{bmatrix}$ and the vector that is perpendicular to to $A$ and $B$ with the same length equal to the area of parallelogram formed by $A$ and $B$](https://youtu.be/BaM7OCEm3G0?si=oo4LtaGxrwKhmcmQ&t=653)
+---
 ## Properties of Cross Product
 - The **2D cross product** gives a **scalar** (signed area of the parallelogram formed by the vectors).
 - The **3D cross product** gives a **vector** that is **perpendicular** to both original vectors (right-hand rule).
