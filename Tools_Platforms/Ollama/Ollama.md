@@ -4,7 +4,7 @@ Ollama is an open source tool that is designed to essentially simplify the proce
 - [But let's see first , what model is](https://youtu.be/2Pm93agyxx4?si=l13rVLeWJY14w-pM&t=188)
 An AI model is a program trained on data to make its own decisions and predictions using new data without human intervention. It uses algorithms to find patterns and make predictions based on the data it has been trained on.<br>
 A model can also be considered a collection of nodes that work together to process and analyze data
-- Parameters can be thought of collection of weights of biases (basically they are the variables that model learn during the training process). Once the model is developed(means file) that file each parameter is represented by 16 to 32 bits 
+- Parameters can be thought of collection of weights of biases (basically parameters are the variables that model learn during the training process). Once the model is developed(means file) that file each parameter is represented by 16 to 32 bits 
     - So for example if model is ollama:8b means model has 8 billion params and each represented have precision of 32bit, then that model will take 4bytes(32/8 = 4bytes) * 8billion = 32gb of vram to run. 
       - But if we qunatized our parameter to 4bits, it will then roughly take 4 to 5gigabyte of vram require to run a model
 

@@ -9,6 +9,11 @@
 
 
 """
+# So basically transpose generally means:
+# If we have (2,1,3,4) 
+# Then after transpose it will be (4,3,1,2) axis  (If we not pass arguments explicitly to transpose() method)
+# from here we can say transpose just reverse the axis in the array
+
 def transpose_matrix(matrix):
     """
     Transpose a given matrix by swapping rows with columns.

@@ -1,6 +1,6 @@
 # Customizing Ollama Model with Modefile
 
-This guide explains how to customize an **Ollama** model using a `Modefile` or any other name. This allows you to configure parameters like temperature, system prompts, and other model behaviors.
+This guide explains how to customize an **Ollama** model using a `Modefile` or any other name. This allows you to configure parameters like temperature, system prompts(**not a parameter**), and other model behaviors.
 
 ---
 

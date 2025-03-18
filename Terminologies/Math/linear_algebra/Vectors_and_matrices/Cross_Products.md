@@ -125,9 +125,9 @@ B_x & B_y & B_z
 Expanding this determinant:
 
 ```math
-(A_y B_z - A_z B_y) \mathbf{i}
-- (A_x B_z - A_z B_x) \mathbf{j}
-+ (A_x B_y - A_y B_x) \mathbf{k}
+(A_y B_z - A_z B_y) \hat{i}
+- (A_x B_z - A_z B_x) \hat{j}
++ (A_x B_y - A_y B_x) \hat{k}
 ```
 ***Now you say, why each cofactor is multiplied by a unit vector?***
 
@@ -167,7 +167,7 @@ A_x B_y - A_y B_x
   - Volume = $|C \cdot (A \times B)|$
      - Basically this ensures the volume is always a non-negative quantity, regardless of the sign produced by the scalar triple product.
 - [Visualization of scalar triple product](https://youtu.be/BaM7OCEm3G0?si=6c2XIs-eDcbOik7S&t=615)
-- [This is the same thing taking dot product between $\begin{bmatrix} x \\ y \\ z \end{bmatrix}$ and the vector that is perpendicular to to $A$ and $B$ with the same length equal to the area of parallelogram formed by $A$ and $B$](https://youtu.be/BaM7OCEm3G0?si=oo4LtaGxrwKhmcmQ&t=653)
+- [This is the same thing taking dot product between $\begin{bmatrix} x \\ y \\ z \end{bmatrix}$ and the vector that is perpendicular to $A$ and $B$ with the same length equal to the area of parallelogram formed by $A$ and $B$](https://youtu.be/BaM7OCEm3G0?si=oo4LtaGxrwKhmcmQ&t=653)
 ---
 ## Properties of Cross Product
 - The **2D cross product** gives a **scalar** (signed area of the parallelogram formed by the vectors).
