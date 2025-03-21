@@ -77,6 +77,7 @@ You can add more `PARAMETER` settings to customize your model further:
 - `PARAMETER context_length 4096` → Sets context window size (affects memory usage).
 - `PARAMETER batch_size 8` → Defines how many tokens are processed in parallel.
 - `PARAMETER num_threads 4` → Allocates CPU threads for faster inference.
+- `PARAMETER num_ctx 4096` → Sets the maximum number of tokens the model can handle. Means how many tokens the model can handle in one go this is also called as context length.
 
 ### **System Behavior**
 - `PARAMETER stop "\n\n"` → Stops generation at a specific sequence.

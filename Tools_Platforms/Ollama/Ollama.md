@@ -11,6 +11,7 @@ A model can also be considered a collection of nodes that work together to proce
 
 - Ollama provides a straightforward way to download run and interact with various models or LLMs without us having to rely on cloud based services .
 
+
 [What problems ollama solves ?](https://youtu.be/GWB9ApTPTv4?si=ST0YqXhx07bcZY4s&t=530)
 
 [Key features of ollama](https://youtu.be/GWB9ApTPTv4?si=Uu-sYk4eWQq3iQDn&t=793)
@@ -18,6 +19,10 @@ A model can also be considered a collection of nodes that work together to proce
 [Use Cases of ollama](https://youtu.be/GWB9ApTPTv4?si=EiLQjHFcD4VaT0s8)
 
 [Different commands](https://youtu.be/GWB9ApTPTv4?si=z8TBayoeUjy0cfIT&t=1440)
+
+[Ollama layers vs Docker](https://youtu.be/_fQTOMdqjfY?si=2vZR_FIY41OcaL7N&t=425)
+
+[To run model what you need](https://youtu.be/_fQTOMdqjfY?si=S_NAcexlHQErTCYf&t=475)
 
 -  `ollama run model`:numB , to download model with specific parameters
 - ollama list : to list all models that you downloaded
@@ -36,6 +41,9 @@ A model can also be considered a collection of nodes that work together to proce
 
    - By default, Ollama models operate with a context window size of 2048 tokens.
 This setting can be adjusted to accommodate more extensive input data, which is particularly useful for complex queries or when handling larger datasets.2048 tokens means if your input goes larger than 2048 tokens, the model will start to forget the previous tokens and will start to generate the response based on the new tokens.
+
+
+----
 
 [Some more Ollama Commands](https://youtu.be/GWB9ApTPTv4?si=jSiB47IfJ8oRa8iN&t=2640)
 
@@ -138,7 +146,7 @@ chat_history = [
     {"role": "user", "content": "What is AI?"}
 ]
 
-response = requests.post(
+response = requestst(
     "http://localhost:11434/api/chat",
     json={"model": "llama3", "messages": chat_history, "stream": False}
 )
