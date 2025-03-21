@@ -19,6 +19,9 @@ A model can also be considered a collection of nodes that work together to proce
 [Use Cases of ollama](https://youtu.be/GWB9ApTPTv4?si=EiLQjHFcD4VaT0s8)
 
 [Different commands](https://youtu.be/GWB9ApTPTv4?si=z8TBayoeUjy0cfIT&t=1440)
+  - [`ollama serve` command in detail](https://youtu.be/luH9j_eOEi4?si=TLs0hoouFJG1V5Pg)
+
+
 
 [Ollama layers vs Docker](https://youtu.be/_fQTOMdqjfY?si=2vZR_FIY41OcaL7N&t=425)
 
@@ -57,6 +60,13 @@ ModelFile explained in detail in separatefile named `modefile-customizeModel.md`
 ```powershell
 ollama show --modelfile  <model-name>
 ````
+
+***ModelFile is not case sensitive***
+
+[You can also create a model from a new model weights file, see how](https://youtu.be/luH9j_eOEi4?si=1mHIPnZRGS6loUpQ&t=205)
+
+
+----
 
 
 

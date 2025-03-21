@@ -118,6 +118,11 @@ Provide well-structured responses and optimize for clarity.
 
 
 ---
+Create model corresponding to this file : 
+```
+ollama create my-custom-model -f Modefile
+```
 
 ## **6. Conclusion**
 Using a `Modefile`, you can fine-tune how your Ollama model behaves, ensuring it aligns with your needs. Experiment with different parameters to optimize performance and response quality!
+

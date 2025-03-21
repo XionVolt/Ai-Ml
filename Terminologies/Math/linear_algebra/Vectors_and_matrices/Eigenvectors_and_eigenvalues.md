@@ -28,10 +28,10 @@
 [Find EigenVector and EigenValue geometically](https://youtu.be/PFDu9oVAE-g?si=jcgUU2zWEnJAYqST&t=422)
 After seeing above clip , we get final formula  : `det(A - lambda * I) = 0` 
 So from start our formula comes like this : 
-1. `A` `v` = `lambda` * `v`
-2. `A` `v` - `lambda` * `I` * `v` = `0`
-3. (`A` - `lambda` * `I`) * `v` = `0` (By taking `v` a common)
-4. det(`A` - `lambda` * `I`) = `0` (This gives us a system where we can solve for 
+1. $A \cdot v = \lambda \cdot v$
+2. $A \cdot v - \lambda \cdot I \cdot v = 0$
+3. $(A - \lambda \cdot I) \cdot v = 0$ (By taking `v` a common)
+4. $det(A - \lambda \cdot I) = 0$ (This gives us a system where we can solve for 
 λ by setting 
 det
 (

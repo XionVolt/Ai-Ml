@@ -36,7 +36,7 @@ In general, a higher embedding dimension can lead to:
 
 ### **Trade-offs**
 However, it also comes with:
-* Increased risk of overfitting(***Overfitting: Overfitting is a phenomenon where a model learns the training data too well, capturing noise and details that are not generalizable(***generalizeable: Means that the model is able to generalize the learned patterns to new, unseen data***) to new data, resulting in poor generalization performance***)
+* Increased risk of overfitting(**Overfitting: Overfitting is a phenomenon where a model learns the training data too well, capturing noise and details that are not generalizable(***generalizeable: Ability of a model to generalize its learned patterns to new, unseen data***) to new data, resulting in poor generalization performance**)
 * Decreased model stability
 * Higher computational costs
 

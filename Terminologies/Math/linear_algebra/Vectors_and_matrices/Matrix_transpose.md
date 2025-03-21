@@ -225,3 +225,5 @@ Linear Transformations not in general preserve the dot product.
 ----
 
 [How can we preserve the dot product?](https://youtu.be/wjYpzkQoyD8?si=imdXej3tnm5UKDWu&t=421)
+
+Topic not completed yet... 
