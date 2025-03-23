@@ -29,7 +29,7 @@ so in this way also we can find where our 2D vector(v) lands in output space .
 ``` 
 
 ----------
-**We also have second formula of finding dot product, ∣a∣∣b∣cosθ** 
+**We have formula for finding angle between two vectors using dot product** 
 
 - **∣a∣** is the magnitude (length) of vector a,
 - **∣b∣** is the magnitude of vector b,

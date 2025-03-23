@@ -120,7 +120,7 @@ Provide well-structured responses and optimize for clarity.
 ---
 Create model corresponding to this file : 
 ```
-ollama create my-custom-model -f Modefile
+ollama create my-custom-model -f Modefile 
 ```
 
 ## **6. Conclusion**

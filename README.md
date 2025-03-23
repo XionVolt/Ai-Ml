@@ -20,7 +20,6 @@ The repo is organized to keep things clean and accessible:
 │-- 📂 Practical-Implementations  # Code examples, Jupyter Notebooks for experiments and visualizations
 │-- 📂 Tools_Platforms  # Useful Ai/Ml tools and platforms 
 │-- 📂 Graphs  # Code for plotting various graphs and data visualizations
-│-- 📂 Models  # Implementations of ML models, from basics to advanced
 │-- 📂 Resources  # Links to useful articles, books, papers, and tutorials
 │-- 📂 Programming # Include modules / libraries / frameworks that used in Ai/Ml```
 ```

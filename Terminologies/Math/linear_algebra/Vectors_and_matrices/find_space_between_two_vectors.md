@@ -29,3 +29,6 @@ For 3 dimensional space, it is given by
 [In python](https://youtu.be/mQewAJb8oJ8?si=C4SjQp-XDR5GgE0h&t=2300)
 
 [Where eucledian distance is used](https://youtu.be/mQewAJb8oJ8?si=uhSktovSLASEbaCh&t=2368)
+
+---
+[KNN(k-nearest neighbors) from scratch](https://youtu.be/mQewAJb8oJ8?si=qFhIJu3d4LWLruX_&t=2483)
