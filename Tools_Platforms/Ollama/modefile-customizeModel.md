@@ -2,6 +2,8 @@
 
 This guide explains how to customize an **Ollama** model using a `Modefile` or any other name. This allows you to configure parameters like temperature, system prompts(**not a parameter**), and other model behaviors.
 
+***It worth to note***: Modelfiles are typically written in ***YAML*** (YAML Ain't Markup Language). This configuration file format is used to define and manage models on platforms like Ollama, allowing for customization of parameters and settings for large language models. But we can customize their parmaeters using simple text file as well.
+
 ---
 
 ## **1. Creating a `Modefile`**
@@ -99,6 +101,11 @@ TOKENIZER my-tokenizer.json
 This requires a valid `my-tokenizer.json` file, which can be generated using **SentencePiece**, **Byte-Pair Encoding (BPE)**, or other tokenization libraries. Ensure the tokenizer is compatible with the base model to avoid mismatches in tokenization.
 
 ---
+
+
+`MESSAGE` - The MESSAGE instruction allows you to specify a message history for the model to use when responding. Use multiple iterations of the MESSAGE command to build up a conversation which will guide the model to answer in a similar way. [See more about it](https://github.com/ollama/ollama/blob/main/docs/modelfile.md#message)
+
+----
 ## **5. Example: Advanced Modefile**
 ```text
 FROM llama3.2
@@ -122,6 +129,7 @@ Create model corresponding to this file :
 ```
 ollama create my-custom-model -f Modefile 
 ```
+
 
 ## **6. Conclusion**
 Using a `Modefile`, you can fine-tune how your Ollama model behaves, ensuring it aligns with your needs. Experiment with different parameters to optimize performance and response quality!

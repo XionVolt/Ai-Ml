@@ -49,6 +49,7 @@ This setting can be adjusted to accommodate more extensive input data, which is 
 ----
 
 [Some more Ollama Commands](https://youtu.be/GWB9ApTPTv4?si=jSiB47IfJ8oRa8iN&t=2640)
+- [ollama cp](https://youtu.be/luH9j_eOEi4?si=ns2TYkXIiTtcZ-2k&t=413)
 
 
 - [We can also modify or we can say customize our model](https://youtu.be/GWB9ApTPTv4?si=gZ2JxzTaqqTRKC4J&t=3240) because we can add certain pieces of metadata to the model to what we want it to be . 

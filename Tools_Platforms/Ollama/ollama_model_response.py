@@ -35,3 +35,23 @@ else :
 
  """
 
+# Using python package
+
+""" import ollama 
+client = ollama.Client()
+model = "llama3.2"
+prompt = "What is MongoDB?"
+
+response = client.generate(
+    model=model,
+    prompt=prompt,
+    stream=True
+)
+
+print('Response from Ollama:')
+
+text = ''
+for chunk in response:
+   
+    print(chunk.response, end='')
+     """

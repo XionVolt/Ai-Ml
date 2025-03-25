@@ -64,6 +64,7 @@ Machine Learning is a subset of **Artificial Intelligence (AI)** that focuses on
 
 ### Ml has two major types : Supervised and Unsupervised learning , both explained in separate files
 ---
+
 ## What are featues?
 - Feature is an individual measurable property or characteristic of the data. (basically features are what we calling x or input) 
 - Also referred to as independent variables(as they are independent of everything unlike label(y) which are dependent on feature/features(we can also say input or x)), predictors, or input variables
