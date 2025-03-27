@@ -62,25 +62,30 @@ x_1
 ```math
 w_1 x_1 + w_2 x_2 + w_3 x_3 + ... + w_n x_n + b = 0
 ```
-The vector w($\begin{bmatrix} w_1 & w_2 & w_3 & ... & w_n \end{bmatrix}$) is also called ***weight vector*** is perpendicular (normal) to the plane.
+The vector w($\begin{bmatrix} w_1 & w_2 & w_3 & ... & w_n \end{bmatrix}$) is also called ***weight vector*** .
 
 
-- If line passes through origin, we can write this as:
-```math
-w^T \cdot x + b = 0
-```
-***$w^T$ is a standard convention linear algebra is to treat weight vectors as column vectors***
-
-
+- If line not passes through origin, we can write this as:
 ```math 
 w_1x_1 + w_2x_2 + b = 0
 ```
 
-Because here both b and x is 0
-We can write this as:
+Or as this:
+
 ```math
-w^T \cdot x = 0
+w^T \cdot x + b = 0
 ```
+***means the hyperplane is shifted by $b$ from the origin***
+
+
+
+
+
+- We can write the equation if line passes through origin as:
+```math
+\pi \text{(its just name of Hyperplane not 3.14....)} =  w^T \cdot x = 0
+``` 
+[You can read this equation as this](https://youtu.be/3qzWeokRYTA?si=tgRCaLhESNuQvYRg&t=1191).
 ***So when we write this equation we can say our line passes through origin***
 ***[And we already know that cosine becomes 0(cos90) also, see its geometrical intuition](https://youtu.be/FqznGyvfiIM?si=2NBERlDTMcFR4Kyk&t=727) you will also find how w vector is perpendicular to the plane***
 
@@ -99,4 +104,6 @@ $$
 $$
 
 ----
-It also worth to note: In higher dimension b is also called ***offset or bias*** that because in high dimensions it represent ***how far the hyperplane is shifted away from the origin. It determines the position of the hyperplane in space***
+- It also worth to note: In higher dimension b is also called ***offset or bias*** that because in high dimensions it represent ***how far the hyperplane is shifted away from the origin. It determines the position of the hyperplane in space***
+
+- ***$w^T$ is a standard convention in linear algebra is to treat weight vectors as column vectors***

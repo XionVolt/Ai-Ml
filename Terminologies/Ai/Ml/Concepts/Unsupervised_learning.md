@@ -11,9 +11,17 @@ In unsupervised learning, the goal is to **discover patterns**, **structures**, 
 # Clustering in Unsupervised Learning
 
 ## 📌 What is Clustering?
-Clustering is a type of **unsupervised learning** where the goal is to group similar data points(into what we called **clusters**) together without predefined labels. It helps in discovering patterns, structures, and relationships in data.
+Clustering is a type of **unsupervised learning** where the goal is to group similar data points(into what we called **clusters**) together. It helps in discovering patterns, structures, and relationships in data.
 ## 🎯 Goal of Clustering
 The primary objective of clustering is to identify **natural groups** in a dataset. It is used when we do not have labeled data but want to explore the inherent structure of the data.
 [Examples and use of clustering by `Andrew Ng`](https://youtu.be/gG_wI_uGfIE?si=Kpk-XiI9-twsz0aj&t=137) 
 Basically in the first example `Mr. Andrew Ng` gives us example of goggle news ,in which clustering algorithm works and that groups related news together(into groups (**clusters**)) , and we can say that this is a type of clustering technique they are using for this . 
 Summarize - Clustering algorithms take data without labels and tries to automatically group similar data points into clusters . 
+
+- [Another Example](https://youtu.be/81ymPYEtFOw?si=dvkulZJzIe2QNVOZ&t=605)
+
+------- Dimensionality Reduction --------
+- [See this to understand dimensionality reduction](https://youtu.be/81ymPYEtFOw?si=r2h5vAQbmpYBdP1T&t=757)
+     - [Visualization](https://youtu.be/81ymPYEtFOw?si=8sDuaqCjJP633Drs&t=887)
+     - [Anomaly Detection](https://youtu.be/81ymPYEtFOw?si=P9e1ZiFGZ6vk0aRm&t=1030)
+     - [Association Rule based learning](https://youtu.be/81ymPYEtFOw?si=nRos0o41Ln5IdaWn&t=1097)

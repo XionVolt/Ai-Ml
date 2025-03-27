@@ -1,7 +1,7 @@
 ## **Embedding Dimension**
 
 ### **Definition**
-In natural language processing (NLP), the embedding dimension refers to the number of dimensions used to represent words or tokens(***of input sequence***) in a vector space. So it's essentially the size
+In natural language processing (NLP), the **embedding dimension** refers to the number of dimensions used to represent words or tokens(***of input sequence***) in a vector space. So it's essentially the size
 of the vector that represents each token.
 
 ### **Traditional Word Embeddings**

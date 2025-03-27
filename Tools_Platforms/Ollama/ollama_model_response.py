@@ -1,3 +1,5 @@
+print('hi')
+
 import requests
 # import json , so we can also use JSON.loads() to convert string to json format
 # in json we can also explicitely tell that give response in json format("format":"json") , but it does by ollama itself so we don't need to do it explicitely 

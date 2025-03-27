@@ -80,11 +80,11 @@ Machine Learning is a subset of **Artificial Intelligence (AI)** that focuses on
 The term discrete refers to values that are countable, distinct, and separate. In other words, discrete values cannot be broken down into smaller fractions (unlike continuous values).
 
 #### 1. Discrete in General Terms
-- Discrete values are fixed, distinct numbers that do not take infinite values between them.
+- Discrete values are ***fixed***, ***distinct*** numbers that do not take infinite values between them.
 - Example: The number of students in a class (10, 20, 30—not 10.5 students).
 
 #### 2. Discrete in Machine Learning
-- In ML, "discrete" is commonly used in the context of labels, variables, and data types:
+- In ML, **"discrete"** is commonly used in the context of labels, variables, and data types:
 
 ##### **A. Discrete Labels (Categories/Classes)**
 When we say discrete labels, we refer to classification problems where the target variable (y label) has a finite set of values (categories).
@@ -116,7 +116,7 @@ Shoe sizes (in whole numbers) → {5, 6, 7, 8, 9}
 
 The main thing is concept !!
 
-- The Data set has one specific row for one specific example(which includes input and its corresponding output) . 
+- The Data set has one specific row for one specific example(also called ***Data Sample***)(which includes input and its corresponding output) . ***In Ai/Ml we basically we represent dimensions of data in columns, and vector components each row***. 
 ```
            x  |  y
     ex1-input |  ex1_output
@@ -132,3 +132,4 @@ So basically each row represents different training example .
 ***(x<sup>(i)</sup>,y<sup>(i)</sup>)***  = 
 ***(ex1-input,ex1_output)*** . 
     - So consider this notation as some index in dataset.
+

@@ -82,7 +82,7 @@ Approximating
 ```
 
 
-This formula is useful when dealing with angles between vectors or when working in physics and geometry.
+This formula is useful when dealing with angles
 
 Its worth to note: Perpendicular vectors have a dot product of 0.
 
