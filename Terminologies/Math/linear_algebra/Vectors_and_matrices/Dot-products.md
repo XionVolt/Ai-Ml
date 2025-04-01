@@ -78,11 +78,20 @@ Step 4: Solve for θ
 
 Approximating
 ```math
-θ \approx cos^{-1}(0.9692) \approx 14.48°
+θ \approx cos^{-1}(0.9692) \approx 14.48° 
 ```
+***Its also called cosine similarity***,
+***Btw we do $cos^−1 (0.9692)$ to find angle, usually we just find cosine value(also called cosine similarity)*** 
 
+## Cosine distance   
+```math
+1 - cosθ = 1 - \frac{a.b}{∣a∣∣b∣} = 1 - \frac{63}{5\times13} = 1 - \frac{63}{65} = 0.0308
+``` 
+***Again θ is angle between two vectors***
+
+$1- \text{cosine similarity} = \text{cosine distance}$ , ***means cosine distance is inversely proportional to cosine similarity***
 
 This formula is useful when dealing with angles
 
-Its worth to note: Perpendicular vectors have a dot product of 0.
+Its worth to note: Perpendicular vectors have a dot product of 0, that's why $cos90$ or $0  \text{ as cos90 is 0}$, means vectors are too distinct
 

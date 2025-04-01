@@ -14,7 +14,7 @@ Semi-supervised learning is a middle ground between supervised and unsupervised 
 1. **Self-Training** – Model labels unlabeled data & retrains.  
 2. **Co-Training** – Two models teach each other.  
 3. **Graph-Based** – Labels spread through data similarity.  
-4. **Generative Models** – VAEs & GANs generate missing labels.  
+4. **Generative Models** – VAEs(Variational Autoencoders) & GANs (Generative Adversarial Networks) generate missing labels.  
 
 ## Where is it Used?
 🔹 **NLP** – Sentiment analysis, text classification.  
