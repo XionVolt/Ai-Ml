@@ -4,3 +4,5 @@
 # See this video - https://youtu.be/HdcLE8JuMrA?si=NkW65685x2JMFJtz&t=3207
 
 # See this video to see about static vs dynamic prompts - https://youtu.be/3TGqlQxpuU0?si=nrppqK1SyEH0Uv2Z&t=637
+
+# why use promptTemplate over f-strings - https://youtu.be/3TGqlQxpuU0?si=9rxjfp_LWZWq2Ox3&t=1637
