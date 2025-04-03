@@ -6,3 +6,5 @@
 # See this video to see about static vs dynamic prompts - https://youtu.be/3TGqlQxpuU0?si=nrppqK1SyEH0Uv2Z&t=637
 
 # why use promptTemplate over f-strings - https://youtu.be/3TGqlQxpuU0?si=9rxjfp_LWZWq2Ox3&t=1637
+
+# different types of meassages in langchain - https://youtu.be/3TGqlQxpuU0?si=qiYNweHgvvSWxDj9&t=2871

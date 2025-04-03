@@ -32,7 +32,7 @@ if os.path.exists("D:/AiMl/Tools_Platforms/chatWithllms/chatHistory.json"):
     load_chat_history()
     print_chat_history()
 else:
-    with open("D:/AiMl/Tools_Platforms/chatWithllms/chatHistory.json", "w") as f:
+    with open("./chatHistory.json", "w") as f:
         json.dump(chat_history, f,indent=4)
 
 # --------------------------
