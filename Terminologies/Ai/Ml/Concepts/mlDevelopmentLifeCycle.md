@@ -5,7 +5,7 @@
 4. [EDA-Exploratory Data Analysis](https://youtu.be/iDbhQGz_rEo?si=Wfk1oLLpeIUOgHKc&t=628)
      - [What are Univariate,Bivariate, Multivariate Analysis](https://youtu.be/iDbhQGz_rEo?si=A995tp4bv1OWM_3c&t=677)
 5. [Feature Engineering and Selection](https://youtu.be/iDbhQGz_rEo?si=HlcPr8Z44LRLFYTO&t=802)
-6. [Model training, evaluation and Selection](https://youtu.be/iDbhQGz_rEo?si=4VfrcErgGeIsWlgw&t=945)
+6. [Model training(Modelling), evaluation and Selection](https://youtu.be/iDbhQGz_rEo?si=4VfrcErgGeIsWlgw&t=945)
      1. [Model Training and Evaluation](https://youtu.be/iDbhQGz_rEo?si=05AloUnaSU99DBvD&t=947)
      2. [Evaluation](https://youtu.be/iDbhQGz_rEo?si=-eN3ehsF9zRZyrxf&t=1027)
      3. [Model Selection](https://youtu.be/iDbhQGz_rEo?si=rAIi74_ExZjIp2Ar&t=1067)

@@ -81,11 +81,11 @@ Approximating
 θ \approx cos^{-1}(0.9692) \approx 14.48° 
 ```
 ***Its also called cosine similarity***,
-***Btw we do $cos^−1 (0.9692)$ to find angle, usually we just find cosine value(also called cosine similarity)*** 
+***Btw we do $cos^−1 (0.9692)$ to find angle in degrees because the value $0.9692$ comes in radians*** 
 
 ## Cosine distance   
 ```math
-1 - cosθ = 1 - \frac{a.b}{∣a∣∣b∣} = 1 - \frac{63}{5\times13} = 1 - \frac{63}{65} = 0.0308
+1 - cosθ = 1 - \frac{a.b}{∣a∣∣b∣} = 1 - \frac{63}{5\times13} = 1 - \frac{63}{65} = 0.0308 
 ``` 
 ***Again θ is angle between two vectors***
 

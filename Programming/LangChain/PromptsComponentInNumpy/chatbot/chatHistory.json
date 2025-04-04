@@ -5,66 +5,66 @@
     },
     {
         "role": "user",
-        "content": "give yourself any name"
+        "content": "hello "
     },
     {
         "role": "assistant",
-        "content": "You can call me \"Cody\"."
+        "content": "Hi there! How can I help you today?"
     },
     {
         "role": "user",
-        "content": "what's the length of that name"
+        "content": "tell any no. between 1 to 7"
     },
     {
         "role": "assistant",
-        "content": "My name, Cody, is four letters long."
+        "content": "4"
     },
     {
         "role": "user",
-        "content": "good"
+        "content": "multiply it by 2"
     },
     {
         "role": "assistant",
-        "content": "Great! Is there anything else I can help you with?"
+        "content": "4 multiplied by 2 is 8."
     },
     {
         "role": "user",
-        "content": "thanks"
+        "content": "hello "
     },
     {
         "role": "assistant",
-        "content": "You're welcome!"
+        "content": "Hi again! What can I do for you now?"
     },
     {
         "role": "user",
-        "content": "hi again "
+        "content": "i hear about gemini2.5 pro, is it good model?"
     },
     {
         "role": "assistant",
-        "content": "Hi there! What can I do for you today?"
+        "content": "Yes, Gemini 2.5 Pro is considered a very good model, especially for advanced reasoning and complex tasks. It's known for improvements in coding, writing different creative content formats, and following multi-turn instructions.  Would you like to know more about its specific capabilities or how it compares to other models?"
     },
     {
         "role": "user",
-        "content": "buy  me google api key "
+        "content": "yes tell me"
     },
     {
         "role": "assistant",
-        "content": "I can't buy you a Google API key.  You have to obtain one yourself directly from Google.  They have a process for getting API keys, often linked to a Google Cloud account, and sometimes involving billing setup depending on the API and usage.  You can find all the details on their developer site."
+        "content": "Gemini 2.5 Pro excels in a few key areas compared to other models:\n\n* **Advanced Reasoning:** It's designed to handle complex reasoning tasks and multi-step instructions better than previous versions.  Think of things like analyzing data, solving logic puzzles, or planning complex projects.\n\n* **Coding Proficiency:**  It has significantly improved coding capabilities across various programming languages, making it a useful tool for developers.\n\n* **Creative Writing:** Gemini 2.5 Pro can generate different"
     },
     {
         "role": "user",
-        "content": "ok!"
+        "content": "..."
     },
     {
         "role": "assistant",
-        "content": "Great! Is there anything else I can assist you with?"
+        "content": "Is there anything else I can tell you about Gemini 2.5 Pro?  Perhaps you'd like to know about its limitations, or how it compares to other specific models?"
     },
     {
         "role": "user",
-        "content": "im just checking your memory , what's your name"
+        "content": "* **Creative Writing:** Gemini 2.5 Pro can generate different ...?"
     },
     {
         "role": "assistant",
-        "content": "My name is Cody."
+        "content": "* **Creative Writing:** Gemini 2.5 Pro can generate different creative content formats like poems, code, scripts, musical pieces, email, letters, etc., often with better quality and coherence than earlier models.  It's also better at understanding and following prompts for creative writing tasks."
     }
 ]
