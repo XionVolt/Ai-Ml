@@ -66,5 +66,29 @@
     {
         "role": "assistant",
         "content": "* **Creative Writing:** Gemini 2.5 Pro can generate different creative content formats like poems, code, scripts, musical pieces, email, letters, etc., often with better quality and coherence than earlier models.  It's also better at understanding and following prompts for creative writing tasks."
+    },
+    {
+        "role": "user",
+        "content": "hi "
+    },
+    {
+        "role": "assistant",
+        "content": "Hi there!  What can I help you with today?"
+    },
+    {
+        "role": "user",
+        "content": "what's today date"
+    },
+    {
+        "role": "assistant",
+        "content": "I don't have access to real-time information, including the current date.  You can easily find this information using a search engine or by checking the date on your device."
+    },
+    {
+        "role": "user",
+        "content": "ok so you not rag!"
+    },
+    {
+        "role": "assistant",
+        "content": "You're right, I'm not a RAG (Retrieval Augmented Generation) model.  I don't retrieve information from external sources like search engines or databases. My knowledge is based on the massive dataset I was trained on.  Therefore, I can't provide real-time information or access specific websites."
     }
 ]

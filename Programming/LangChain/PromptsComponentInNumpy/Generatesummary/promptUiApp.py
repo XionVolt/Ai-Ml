@@ -53,14 +53,14 @@ selected_length = st.selectbox("Select Explanation Length", explanation_lengths)
 # Generate dynamic prompt
 if st.button("Generate Summary"):
 
-    template = load_prompt('prompt.json')
+    template = load_prompt('prompt.json') # load the prompt from the file, in which we store PromptTemplate object with this command there ```template.save('prompt.json')```
 
     # Function to call the model with retries
     def generate_response():
         retries = 3  # Number of retry attempts
         for attempt in range(retries):
             try:
-                chain = template | model
+                chain = template | model # this is a shortcut of -  https://youtu.be/3TGqlQxpuU0?si=f-4hvf32aCWzFGN6&t=2037
                 result = chain.invoke({
                     'paper_input': selected_paper,
                     'style_input': selected_style,
