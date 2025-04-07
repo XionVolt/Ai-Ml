@@ -7,7 +7,7 @@ review_schema = {
     # This line (`$schema`) declares the version of JSON Schema you are using — in this case, Draft 7, which is one of the most commonly supported and stable versions.
     "$schema": "http://json-schema.org/draft-07/schema#",
     "title": "Review",
-    "type": "object",
+    "type": "object",  
     "properties": {
         "key_themes": {
             "type": "array",
@@ -47,7 +47,7 @@ review_schema = {
 model = ChatGoogleGenerativeAI(model="gemini-1.5-pro")
 
 # Use the JSON schema directly
-structured_model = model.with_structured_output(schema=review_schema, method="json_schema")
+structured_model = model.with_structured_output(schema=review_schema, method="json_mode")
 
 # Sample input
 input_text = """

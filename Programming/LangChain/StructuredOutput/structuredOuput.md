@@ -31,10 +31,7 @@
 
 -----
 
-[When we call our model `with_structured_output` method we can tell our model, by which method we want structured output, `json_schema` or `function_calling`  ](https://youtu.be/y5EmRr1O1h4?si=JKQAmWFzMUmecdwe&t=3897)
+[When we call our model `with_structured_output` method we can tell our model, by which method we want structured output, `json_schema` or `function_calling` ](https://youtu.be/y5EmRr1O1h4?si=JKQAmWFzMUmecdwe&t=3897)
 
 ***But there are some models who not support structured output itself, like `Tinyllama`, in that case we have to make output parsers on our own***
 
------
-
-[Output Parsers](https://youtu.be/Op6PbJZ5b2Q?si=m4DI7nKCTdZ_6UOD)

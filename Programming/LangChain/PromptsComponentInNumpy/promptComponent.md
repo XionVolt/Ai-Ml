@@ -54,7 +54,7 @@ Output:
 
 --- Chat #1 ---
 HumanMessage: My name is tira.
-AIMessage: Hi tira, how can I help you?                                                                                                                                                                     
+AIMessage: Hi tira, how can I help you?                                                                                                                                                                   
 --- End of Chat #1 ---                                                                                                                                                                                      
 
 --- Chat #2 ---

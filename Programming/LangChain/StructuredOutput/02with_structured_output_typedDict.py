@@ -14,7 +14,7 @@ class Review(BaseModel):
 model = ChatOllama(model="llama3.2")
 
 # Configure the model to use the JSON schema method for structured output
-structured_model = model.with_structured_output(Review, method="json_schema")
+structured_model = model.with_structured_output(Review, method="json_mode")
 
 # Input text
 input_text = """

@@ -76,7 +76,7 @@
 
 [What **variance** and **Standard deviation** values describe](https://youtu.be/l_YszNIJfFA?si=WEkX8FuRyQSVRxyO&t=827)
 
-Variance is a big number means spread of the data points is big and, if small means curve(peak) height is high and data points are close to each other.
+If Variance is a big number means spread of the data points is big and, if small means curve(peak) height is high and data points are close to each other.
 
 ----
 
