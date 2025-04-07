@@ -38,4 +38,4 @@ Expensive compared to competitors
 response = structured_model.invoke(input_text)
 
 # Output the structured response
-print(response.json())
+print(dict(response))
