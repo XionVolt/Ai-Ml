@@ -24,7 +24,12 @@ Several loss functions are commonly used in machine learning to evaluate model p
 #### 2. Mean Absolute Error (MAE) / L1 Loss
 - **Use Case**: Regression tasks.
 - **Description**: Measures the average of the absolute differences between the actual and predicted values.
-- **Key Point**: More robust to outliers as it does not square the differences.
+- **Key Point**: Less sensitive to outliers than MSE 
+
+----
+[MSE And MAE, both explained](https://youtu.be/7oSh63dE_lE?si=jQBNiRgVdMVgE8j4)
+
+----
 
 #### 3. Binary Cross-Entropy Loss / Log Loss
 - **Use Case**: Binary classification tasks.
@@ -43,3 +48,9 @@ Several loss functions are commonly used in machine learning to evaluate model p
 - **Use Case**: Regression tasks.
 - **Description**: Combines the benefits of MSE and MAE. Uses a quadratic loss for smaller errors and a linear loss for larger errors.
 - **Key Point**: Less sensitive to outliers than MSE but does not completely ignore them like MAE.
+
+
+-----
+Here is a visual map of most of the loss functions:
+
+![](./Images/LossFunctionsExamples.png)

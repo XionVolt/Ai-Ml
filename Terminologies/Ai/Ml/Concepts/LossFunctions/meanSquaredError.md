@@ -1,5 +1,6 @@
 [Mean squared error](https://www.youtube.com/live/40xGMygHMDU?si=3FoO-kLXNyFvX2US&t=4337)
 
+
 Formula for mean squared error:
 ```math
 MSE = \frac{1}{n} \sum_{i=1}^n (y_i - \hat{y_i})^2
@@ -30,3 +31,5 @@ print("Mean squared error:", mse)
 # Output:
 # Mean squared error: 1.0
 ```
+
+[Penalize the larger errors than smaller ones](https://youtu.be/7oSh63dE_lE?si=6_vA-t0Db_ZzTOZB&t=257)
