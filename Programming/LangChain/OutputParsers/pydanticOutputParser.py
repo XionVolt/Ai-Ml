@@ -28,6 +28,15 @@ template = PromptTemplate(
 )
 
 prompt = template.invoke({})
+print(prompt)
+"""
+text='Give the name, age and city of a fictional person \n The output should be formatted as a JSON instance that conforms to the JSON schema below.
+\n\nAs an example, for the schema {"properties": {"foo": {"title": "Foo", "description": "a list of strings", "type": "array", "items": {"type": "string"}}},
+ "required": ["foo"]}\nthe object {"foo": ["bar", "baz"]} is a well-formatted instance of the schema. The object {"properties": {"foo": ["bar", "baz"]}}
+is not well-formatted.\n\nHere is the output schema:\n```\n{"properties": {"name": {"description": "Name of the person", "title": "Name", "type": "string"},
+"age": {"description": "Age of the person", "exclusiveMinimum": 18, "title": "Age", "type": "integer"}, "city": {"description": "City of the person", 
+"title": "City", "type": "string"}}, "required": ["name", "age", "city"]}\n```'
+"""
 
 result = model.invoke(prompt)
 
