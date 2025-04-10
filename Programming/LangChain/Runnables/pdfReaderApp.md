@@ -1,0 +1,2 @@
+- [pdf-reader app](https://youtu.be/u3b-W1NgYa4?si=w3OIgw2xWKzdAUrG&t=787)
+- [`RetrieverQAChain`, you can build same application as `pdfreader` in less code and complexity](https://youtu.be/u3b-W1NgYa4?si=b4CjXUNCxWo06VXc&t=1187)
