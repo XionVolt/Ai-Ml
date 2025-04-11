@@ -33,7 +33,7 @@ values to specific range)
 5. [Training the model](https://youtu.be/dr7z7a_8lQw?si=gABn03ZrLkn0Ft-3&t=1227)
 
 6. [Evaluation](https://youtu.be/dr7z7a_8lQw?si=FsrSQVv9UBoqn9eR&t=1327)
-    - [How to plot decision boundary(**decision boundary** is a pattern notice by the model that is used to predict the output by Model)](https://youtu.be/dr7z7a_8lQw?si=ym2Sg5qCc-n2m210&t=1437)
+    - [How to plot decision boundary(**decision boundary** is a pattern notice by the model that is used to predict the output by that Model)](https://youtu.be/dr7z7a_8lQw?si=ym2Sg5qCc-n2m210&t=1437)
 
 7. [Exporting the model](https://youtu.be/dr7z7a_8lQw?si=OJMkgDtous6zeNzR&t=1551)
 
