@@ -36,17 +36,18 @@ classifier_chain = prompt1 | model | parser2
 
 prompt2 = PromptTemplate(
     template="Write an appropriate response for this positive feedback text:\n{feedback}, and this feedback will be sent to customer, so write pretty neat output for the customer",
+    input_variables=["feedback"]
 )
 
 prompt3 = PromptTemplate(
     template="Write an appropriate response for this negative feedback text:\n{feedback}, and this feedback will be sent to customer, so write pretty neat output for the customer",
-
+    input_variables=["feedback"]
 )
 
 branch_chain = RunnableBranch(
     (lambda x: x.sentiment == "Positive", prompt2 | model | parser),
     (lambda x: x.sentiment == "Negative", prompt3 | model | parser),
-   RunnableLambda( lambda x: "could not find sentiment")
+   RunnableLambda( lambda x: "could not find sentiment") # why we make this runnable, and understand what is runnableLambda -> https://youtu.be/5hjrPILA3-8?si=LCfTFl8OtvakmpL5&t=2957
 )
 
 chain = classifier_chain | branch_chain

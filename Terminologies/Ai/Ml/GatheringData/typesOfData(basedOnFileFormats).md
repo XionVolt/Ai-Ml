@@ -1,0 +1,5 @@
+[Types of formats](https://youtu.be/a_XrmKlaGTs?si=EtU-WVmoGBq6fk74&t=47)
+1. [CSV files](https://youtu.be/a_XrmKlaGTs?si=UfvBA_xdFNfxnzPu&t=71)
+2. [JSON/SQL](https://youtu.be/a_XrmKlaGTs?si=DrB2iujOfzkYzS4j&t=117)
+3. [Fetch data from an API](https://youtu.be/a_XrmKlaGTs?si=4KtNBjguitHSovCj&t=163)
+4. [Web scraping](https://youtu.be/a_XrmKlaGTs?si=4KtNBjguitHSovCj&t=163)

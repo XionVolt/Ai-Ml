@@ -7,3 +7,4 @@
 4. [Getting Data](https://youtu.be/A9SezQlvakw?si=nrjpCG8hwaUM524G&t=811)
 5. [Metrics to measure](https://youtu.be/A9SezQlvakw?si=c0KZtNi0KDMpNQ1F&t=977)
 6. [Decide Between Online vs Batch](https://youtu.be/A9SezQlvakw?si=05udvzz8SvSZ7OPL&t=1037)
+7. [Check assumptions](https://youtu.be/A9SezQlvakw?si=I_kNA0uWpCJRXRtd&t=1161)
