@@ -17,3 +17,5 @@
 [What are Runnables](https://youtu.be/u3b-W1NgYa4?si=eGscY6r8uGS4VsGr&t=2037)
 
 ----
+
+[Imagining like why and how langchain implemented runnables](https://youtu.be/u3b-W1NgYa4?si=qA2_R1QbYtufQbJg&t=2387)
