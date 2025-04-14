@@ -4,7 +4,6 @@
 3. [Fetch data from an API](https://youtu.be/a_XrmKlaGTs?si=4KtNBjguitHSovCj&t=163)
 4. [Web scraping](https://youtu.be/a_XrmKlaGTs?si=4KtNBjguitHSovCj&t=163)
 
-----
 
 1. [Working with csv and tsv file formats](https://youtu.be/a_XrmKlaGTs?si=n11F4YACwT9g0hyg&t=257)
     - [What is csv file](https://youtu.be/a_XrmKlaGTs?si=xqqeuAWSt0V0pzo6&t=291)
@@ -16,4 +15,5 @@
     - [Working with tsv files, and `sep` parameter of `pd.read_csv`,(sep='\t' when reading tsv files using `pd.read_csv`)](https://youtu.be/a_XrmKlaGTs?si=baX9IBAJKOwUItJl&t=631)
     - [Name your columns , if data have not column names, with `name` parameter of `pd.read_csv`](https://youtu.be/a_XrmKlaGTs?si=wbGmZLBu0LoU_CK5&t=727)
     - [`Index_Col` parameter of `pd.read_csv`](https://youtu.be/a_XrmKlaGTs?si=MWxT2oqu8VPLZKS2&t=823)
-    
+    - [`Header` parameter](https://youtu.be/a_XrmKlaGTs?si=YEOZGwdz5fLnimmf&t=877)
+    - [`use_cols` parameter](https://youtu.be/a_XrmKlaGTs?si=JZsuQunsjdgOiV6-&t=957)

@@ -39,3 +39,6 @@
     - [Real world example of `Runnable Passthrough`](https://youtu.be/47nc0n-e4_w?si=xYhxcRJENSTF3-Up&t=1647)
 
 4. [Runnablelambda](https://youtu.be/47nc0n-e4_w?si=ScQ41B0uLiDgDjbj&t=1807)
+    - [Example of `Runnablelambda`](https://youtu.be/47nc0n-e4_w?si=-KYb0y1AA5IWCbeB&t=2077)
+
+5. [RunnableBranch](https://youtu.be/47nc0n-e4_w?si=MOz0DdyO6NoF9O9t&t=2397)
