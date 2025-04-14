@@ -42,3 +42,5 @@
     - [Example of `Runnablelambda`](https://youtu.be/47nc0n-e4_w?si=-KYb0y1AA5IWCbeB&t=2077)
 
 5. [RunnableBranch](https://youtu.be/47nc0n-e4_w?si=MOz0DdyO6NoF9O9t&t=2397)
+    - [Example of `RunnableBranch`](https://youtu.be/47nc0n-e4_w?si=3KKdOSubh18GoAdq&t=2557)
+    - [Understand how `RunnableBranch` works](https://youtu.be/47nc0n-e4_w?si=sqphJaxYP1U6PYXg&t=2727)
