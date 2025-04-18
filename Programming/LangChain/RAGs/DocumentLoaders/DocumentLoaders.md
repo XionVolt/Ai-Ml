@@ -17,3 +17,9 @@
     - [Load Vs LazyLoad and why and when we need that](https://youtu.be/bL92ALSZ2Cg?si=FYdT67BMW_X-GzhW&t=2167)
 
 4. [WebBaseLoader and other loaders for web content](https://youtu.be/bL92ALSZ2Cg?si=EnSbL6NSMoN3kB0Y&t=2541)
+
+5. [CSVLoader](https://youtu.be/bL92ALSZ2Cg?si=F5VXs5GWvSYfpfju&t=2977)
+    - [CSVLoader in Code](https://youtu.be/bL92ALSZ2Cg?si=FvWL3dUvgRJFMeqZ&t=2997)
+
+- [Other document loaders](https://youtu.be/bL92ALSZ2Cg?si=4YLU5fdcnnhmhFhH&t=3151)
+- [Custom document loaders](https://youtu.be/bL92ALSZ2Cg?si=qKxsdlpU7Yq7gnuI&t=3261)
