@@ -18,3 +18,5 @@
 
 3. [Document-structured based text splitting(here we also use ***recursive text splitter, but separators are different***, and here you also have to tell that document is of which type) ](https://youtu.be/SEWS9P4ODmc?si=OjKD6i9lsE4LLnzM&t=2347)
  - [Hands on example of document-structured based text splitting](https://youtu.be/SEWS9P4ODmc?si=AznIG9oh0Cd601F5&t=2767)
+
+4. [Semantic based text splitting](https://youtu.be/SEWS9P4ODmc?si=Y0H8f68usNZlqhVO&t=2907)
