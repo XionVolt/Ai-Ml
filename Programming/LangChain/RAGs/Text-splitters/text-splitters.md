@@ -20,3 +20,4 @@
  - [Hands on example of document-structured based text splitting](https://youtu.be/SEWS9P4ODmc?si=AznIG9oh0Cd601F5&t=2767)
 
 4. [Semantic based text splitting](https://youtu.be/SEWS9P4ODmc?si=Y0H8f68usNZlqhVO&t=2907)
+    - [Hands on code of semantic based text splitting](https://youtu.be/SEWS9P4ODmc?si=mIlsnrjyEBeuG4Ed&t=3247)

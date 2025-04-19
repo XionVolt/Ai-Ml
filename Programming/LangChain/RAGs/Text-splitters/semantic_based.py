@@ -1,18 +1,33 @@
 from langchain_experimental.text_splitter import SemanticChunker
 from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
-
-import os 
+import os
 from dotenv import load_dotenv
+
 load_dotenv()
 
+# Load HuggingFace embeddings
 embeddings = HuggingFaceInferenceAPIEmbeddings(
+    api_key=os.getenv("HUGGINGFACEHUB_API_TOKEN"),
     model_name="sentence-transformers/all-MiniLM-L6-v2"
 )
 
-text_spltiter = SemanticChunker(
-    HuggingFaceInferenceAPIEmbeddings(
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
-),
-breakpoint_threshold_type="standard-deviation", # understand breakpoint_threshold_type -> https://youtu.be/SEWS9P4ODmc?si=PSKOPGCc5g-36BpP&t=3287
-breakpoint_threshold_amount=1, # understand breakpoint_threshold_amount -> https://youtu.be/SEWS9P4ODmc?si=Fbk2m1c6kOiDj1t6&t=3337
+# SemanticChunker with valid threshold type
+text_splitter = SemanticChunker(
+    embeddings=embeddings,
+    breakpoint_threshold_type="percentile",  # ✅ FIXED here
+    breakpoint_threshold_amount=1
 )
+
+# Read input text
+with open('someText.txt') as f:
+    sample = f.read()
+
+# Create semantic chunks
+docs = text_splitter.create_documents([sample])
+# print(docs)
+
+
+for i, doc in enumerate(docs):
+    print('\n\n',f'Semantic Chunk {i+1}:','\n')
+    print(doc.page_content)
+    print('---')
