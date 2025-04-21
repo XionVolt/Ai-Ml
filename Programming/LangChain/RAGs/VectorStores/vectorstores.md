@@ -28,7 +28,6 @@ from google.colab import userdata # (if you using google colab)
 huggingfacekey =  userdata.get('HUGGINGFACEHUB_API_TOKEN')
 
 # ✅ Set your Hugging Face API Key (already done)
-# os.environ["HUGGINGFACEHUB_API_TOKEN"] = "hf_your_key_here"
 
 # ✅ Initialize embedding function
 embedding_function = HuggingFaceInferenceAPIEmbeddings(
@@ -57,19 +56,51 @@ docs = [
 
 vector_store =  Chroma(
     embedding_function = embedding_function, # so this embedding model is used by chroma db to create embeddings(and then it will store those embeddings)
-    persist_directory = "chroma_db",
-    collection_name = "sample"
-
+    persist_directory = "chroma_db", # this is the directory where documents in the form of vectors are stored
+    collection_name = "sample" # this is the name of the collection in the chroma db
 )
 
+# store documents in vector store and return list of id of store documents
 vector_store.add_documents(docs) # to add documents to vector store
 
 
-print(vector_store.get(include=['embeddings','documents','metadatas']))
+# it gives you embeddings, documents, metadatas of all the documents in the vector store
+print(vector_store.get(include=['embeddings','documents','metadatas'])) 
 
 
-print(vector_store.similarity_search("Who is a calm IPL captain?", k=2)) # output document object 
+# Perform a similarity search to find the top 2 results based on the query
+print(vector_store.similarity_search(query"Who is a calm IPL captain?", k=2)) # output document object 
 # k=2 means, top 2 results if its the only 1 result then it will return 1 result 2 times
+
+""" same as above but with score"""
+
+
+vector_store.similarity_search_with_score(query="Who is a calm IPL captain?", k=2) 
+
+"""Note: With `similarity_search` and `similarity_search_with_score` also have a filter parameter that you can use to filter the results based on metadata."""
 
 ```
 
+## Note: 
+**Low score** means high similarity and **high score** means low similarity, 
+this is because most vector databases like Chroma use Euclidean distance 
+or cosine distance as the similarity metric.
+These are distance-based, not similarity scores.
+
+- If you want to invert the logic and see "similarity scores" instead of distances, you can compute it like this:
+
+`similarity_score = 1 - distance_score`
+
+## to update a document
+```py
+updated_doc1 = Document(page_content="Virat Kohli is one of the most successful and consistent batsmen in IPL history. Known for his aggressive batting style and passionate leadership. He mostly played from RCB Team in Ipl",
+            metadata={"team": "Royal Challengers Bangalore"})
+
+
+vector_store.update_document(document_id='c3619d66-abf5-4859-92e9-7b3165c289b3', document=updated_doc1)
+```
+
+## to delete a document
+```py
+vector_store.delete(ids=['24a7ff1c-0a4a-4fec-911a-34453f0ca070'])
+```
