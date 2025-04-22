@@ -11,19 +11,16 @@
 - Based on Data Source
   - [Wikipedia Retriever](https://youtu.be/pJdMxwXBsk0?si=vrhBQFSohKKW1vDw&t=607)
     - [How its different from wikipedia document loader](https://youtu.be/pJdMxwXBsk0?si=C_xuxnb183lE2_3N&t=887)
-    - Example Code
-      ```py
-      from langchain_community.retrievers import WikipediaRetriever
-      query = "what is model context protocol?"
-
-      # Initialize the retriever (optional: set language and top_k)
-      retriever = WikipediaRetriever(top_k_results=2, lang="en")
-      docs = retriever.invoke(query)
-      print(docs) 
-      # Print retrieved content
-      for i, doc in enumerate(docs):
-        print(f"\n--- Result {i+1} ---")
-        print(f"Content:\n{doc.page_content}...") 
-      ```
+  
 
   - [Vector store retriever](https://youtu.be/pJdMxwXBsk0?si=Th43NeX0xKZ-CpK0&t=947)
+  - [Vector store retriever in code](https://youtu.be/pJdMxwXBsk0?si=FWWrIMs8bXrO49ab&t=1037)
+  - [What's the point of `vectorstore.as_retriever(search_kwargs={"k": 2})` if `vector_store.similarity_search(query, k=2)` also does the same thing](https://youtu.be/pJdMxwXBsk0?si=zWlMK_C6CwoaCB9P&t=1167)
+
+  
+- Based on the retrieval strategy they use
+  - [Maximal Marginal Relevance(MMR)](https://youtu.be/pJdMxwXBsk0?si=r0ty-HRrbhSvgkGu&t=1337)
+  - [MMR In code](https://youtu.be/pJdMxwXBsk0?si=WUbrAim9lzprTMtS&t=1627)
+
+  - [Multi query retriever](https://youtu.be/pJdMxwXBsk0?si=Dgk0Mg0_MQ1rJbpk&t=1837)
+    - [Multi query retriever in code](https://youtu.be/pJdMxwXBsk0?si=4tKSKbC-HMVQjyuc&t=2117)
