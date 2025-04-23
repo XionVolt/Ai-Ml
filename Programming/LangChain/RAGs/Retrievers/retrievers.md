@@ -24,3 +24,8 @@
 
   - [Multi query retriever](https://youtu.be/pJdMxwXBsk0?si=Dgk0Mg0_MQ1rJbpk&t=1837)
     - [Multi query retriever in code](https://youtu.be/pJdMxwXBsk0?si=4tKSKbC-HMVQjyuc&t=2117)
+
+  - [Contextual Compression retriever](https://youtu.be/pJdMxwXBsk0?si=kKNvOEVkWT_6wFCD&t=2387) 
+  - [Contextual Compression retriever in code](https://youtu.be/pJdMxwXBsk0?si=ifNE1atSEbliUPzA&t=2717)
+
+- [More retrievers](https://youtu.be/pJdMxwXBsk0?si=xbbL_ngCPkTabkL3&t=2877)
