@@ -1,7 +1,7 @@
 - [What is RAG?](https://youtu.be/bL92ALSZ2Cg?si=dwu74W8QrEZsQ6Et&t=237)
 RAG is a technique that combines information retrieval with language generation, where a model retrieves relevant documents from a knowledge base and then uses them as context to generate accurate and grounded responses.
 
-So basically RAG is a way to make language model smarter by giving it extra information(relevant to that query, that model will use to solve or you cans say to find a answer to the query) at the time you user ask a question. 
+So basically RAG is a way to make language model smarter by giving it extra information(relevant to that query, that model will use to solve or you can say to find a answer to the query) at the time user ask a question. 
 
 
 ## Benefits of using RAG
@@ -30,4 +30,29 @@ So basically RAG is a way to make language model smarter by giving it extra info
     ***"An emergent property is a behaviour or ability that suddenly appears in a system when it reaches a certain scale or complexity—even though it was not explicitly programmed or expected from the individual components."***
 
      - [***Language Models are few shot learners*** Paper](https://youtu.be/X0btK9X0Xnk?si=Q6OyvvLB9WrtHz8E&t=1697)
-     - [Why stop here, we can improve it more by improving the, by improving `in context learning`, **all dots like connecting here of like what is the inspiration behind sending user query with relevalnt documents related to that query to the model**](https://youtu.be/X0btK9X0Xnk?si=Tvv64r0G_iTdWx5f&t=1897)
+     - [Why stop here, we can improve it more by improving the, `in context learning`, **all dots like connecting here of like what is the inspiration behind sending user query with relevalnt documents related to that query to the model**](https://youtu.be/X0btK9X0Xnk?si=Tvv64r0G_iTdWx5f&t=1897)
+
+-----
+
+- [Understanding RAG again](https://youtu.be/X0btK9X0Xnk?si=B_DFgOV7cRgrrCre&t=2207)
+
+- [Making Rag requires a 4 steps, understand this 4 steps](https://youtu.be/X0btK9X0Xnk?si=-q27cQzEh3-rIfn-&t=2257)
+
+
+- 4 steps in summary
+1. [Indexing in summary](https://youtu.be/X0btK9X0Xnk?si=wzHg-Q-QDwDd5u9m&t=2277)
+2. [Retrieval in summary](https://youtu.be/X0btK9X0Xnk?si=19kKXsV8t1tt9mvL)
+3. [Augmentation in summary](https://youtu.be/X0btK9X0Xnk?si=pL14OLdreqLzvV7Y&t=2407)
+4. [Generation in summary](https://youtu.be/X0btK9X0Xnk?si=JOaF4asQfAHqqfUL&t=2437)
+
+- 4 steps in detail
+1. [Indexing in detail](https://youtu.be/X0btK9X0Xnk?si=Xpz_83_jpXtNZo1t&t=2467)
+    - Indexing itself includes 4 steps in it
+      - [Document Ingestion](https://youtu.be/X0btK9X0Xnk?si=iof4vL8p69yQ8FB_&t=2507)
+      - [Text chunking](https://youtu.be/X0btK9X0Xnk?si=sJhXUflArBbBStKY&t=2587)
+      - [Embedding Generation](https://youtu.be/X0btK9X0Xnk?si=1ZiRAkfHRbzhWO51&t=2757)
+      - [Storage in vector store](https://youtu.be/X0btK9X0Xnk?si=flsYCoxKp4qQpDV-&t=2857 )
+2. [Retrieval in detail](https://youtu.be/X0btK9X0Xnk?si=GfTlhxBWJBGFjQLc&t=2937)
+3. [Augmentation in detail](https://youtu.be/X0btK9X0Xnk?si=Lxg4-f2PogUD66mo&t=3177)
+4. 
+
