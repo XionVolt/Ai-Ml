@@ -51,8 +51,19 @@ So basically RAG is a way to make language model smarter by giving it extra info
       - [Document Ingestion](https://youtu.be/X0btK9X0Xnk?si=iof4vL8p69yQ8FB_&t=2507)
       - [Text chunking](https://youtu.be/X0btK9X0Xnk?si=sJhXUflArBbBStKY&t=2587)
       - [Embedding Generation](https://youtu.be/X0btK9X0Xnk?si=1ZiRAkfHRbzhWO51&t=2757)
-      - [Storage in vector store](https://youtu.be/X0btK9X0Xnk?si=flsYCoxKp4qQpDV-&t=2857 )
+      - [Storage in vector store](https://youtu.be/X0btK9X0Xnk?si=flsYCoxKp4qQpDV-&t=2857)
 2. [Retrieval in detail](https://youtu.be/X0btK9X0Xnk?si=GfTlhxBWJBGFjQLc&t=2937)
 3. [Augmentation in detail](https://youtu.be/X0btK9X0Xnk?si=Lxg4-f2PogUD66mo&t=3177)
-4. 
+4. [Generation](https://youtu.be/X0btK9X0Xnk?si=TKi0cHzUD2OwtgPy&t=3247)
 
+----
+[Why RAG Better than fine-tuning](https://youtu.be/X0btK9X0Xnk?si=OS76mssdfLEJsBaw&t=3407)
+
+----
+## Building RAG
+
+- [Step1: The problem statement](https://youtu.be/J5_-l7WIO_w?si=3vOFsZgxEgHjTxiV&t=57)
+
+- [Step2: Plan of Action](https://youtu.be/J5_-l7WIO_w?si=eaJTGO-nYrvR9Wqb&t=287)
+
+- [Step3: ]()
