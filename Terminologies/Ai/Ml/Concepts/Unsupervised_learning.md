@@ -25,3 +25,50 @@ Summarize - Clustering algorithms take data without labels and tries to automati
      - [Visualization](https://youtu.be/81ymPYEtFOw?si=8sDuaqCjJP633Drs&t=887)
      - [Anomaly Detection](https://youtu.be/81ymPYEtFOw?si=P9e1ZiFGZ6vk0aRm&t=1030)
      - [Association Rule based learning](https://youtu.be/81ymPYEtFOw?si=nRos0o41Ln5IdaWn&t=1097)
+
+----
+# Association Rule Mining
+## What is Association Rule Mining?
+
+- It is a technique to find patterns, associations, or relationships between items in large datasets.
+
+- No labels (no "right" or "wrong" output for corrsponding features) — it just discovers patterns hidden in the data.
+
+- Very common in market basket analysis (analyzing customer purchases).
+
+### 📚 Example:
+Imagine you run a supermarket. After analyzing all customer bills, you find:
+
+- **"If a customer buys bread and butter, they also buy milk 70% of the time."**
+
+This can be written as a rule:
+
+`{Bread, Butter} ➔ {Milk}`
+
+Here:
+
+`{Bread, Butter}` is the **antecedent** (the "if" part).
+
+`{Milk}` is the consequent (the "then" part).
+
+You didn't tell the machine what to look for — you just gave it data, and it found this pattern on its own.
+That's why it's unsupervised!
+
+### ⚡ Some Key Terms:
+- **Support**: How often the items appear together.
+
+- **Confidence**: How often the rule has been true (given the "if" part, how often the "then" part happens).
+
+- **Lift**: How much more likely the "then" part is, compared to random chance.
+
+- **Interest Measure**: A measure of how much the rule is interesting to the user.
+
+- **Antecedent**: (One that precedes another), basially item(s) found in the data before leading to another item.
+
+- **Consequent**: (One that follows another), basially item(s) found in the data after leading to another item.
+
+***You can think *Antecedent* as "if" and *Consequent* as "then":***
+
+> IF you have antecedent, THEN you will likely have consequent.
+
+
