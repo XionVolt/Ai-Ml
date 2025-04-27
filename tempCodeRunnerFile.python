@@ -1,0 +1,176 @@
+# %% [markdown]
+# # Installing libraries
+
+# %%
+# !pip install google-ai-generativelanguage==0.6.15 --force-reinstall --upgrade --quiet
+
+
+# %%
+# pip install google-generativeai --upgrade --quiet
+
+# %%
+# !pip install -q youtube-transcript-api langchain-community langchain-openai faiss-cpu tiktoken python-dotenv langchain_google_genai   --quiet
+
+# %%
+from youtube_transcript_api import YouTubeTranscriptApi, TranscriptsDisabled
+
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+
+from langchain_community.embeddings import HuggingFaceInferenceAPIEmbeddings
+
+
+from langchain_community.vectorstores import FAISS
+
+from langchain_core.prompts import PromptTemplate
+
+from langchain_google_genai import ChatGoogleGenerativeAI
+
+from langchain_core.output_parsers import StrOutputParser
+from langchain_core.runnables import RunnableParallel, RunnablePassthrough,RunnableLambda
+
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+
+
+# %% [markdown]
+# # Step1 Indexing
+# a.  (Document Ingestion)
+
+# %%
+video_id = "LPZh9BOjkQs"  # only the ID, not full URL
+try:
+    # If you don't care which language, this returns the "best" one
+    transcript_list = YouTubeTranscriptApi.get_transcript(video_id, languages=["en"])
+
+    # Flatten it to plain text
+    transcript = " ".join(chunk["text"] for chunk in transcript_list) # basically here we concatenating items of genrerator by space
+    print(transcript)
+
+except Exception as e:
+    print("Error:" , e)
+
+# %% [markdown]
+# # Step1
+# b. (Text Splitting)
+
+# %%
+splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
+chunks = splitter.create_documents([transcript])
+
+# %% [markdown]
+# # Step 1c & 1d - Indexing (Embedding Generation and Storing in Vector Store)
+
+# %%
+chunks
+
+# %%
+import faiss
+print(faiss.__version__)
+
+# %%
+huggingaFceApikey =  os.getenv("HUGGINGFACEHUB_API_TOKEN")
+embeddings = HuggingFaceInferenceAPIEmbeddings(model_name="intfloat/e5-base-v2",api_key=huggingaFceApikey)
+embeddings = HuggingFaceInferenceAPIEmbeddings(model_name="intfloat/e5-base-v2",api_key=huggingaFceApikey)
+vector_store = FAISS.from_documents(chunks,embeddings)
+
+# %%
+vector_store.index_to_docstore_id # for see IDs of stored embeddings, and their corresponding index in the vecotor store(FAISS)
+
+# %%
+vector_store.get_by_ids(['e531f253-b7e6-4ed1-a2c3-79d782096073'])
+
+# %% [markdown]
+# # Step 2 -> Retrieval
+
+# %%
+retriever = vector_store.as_retriever(search_type="similarity",search_kwargs={"k": 4})
+
+# %%
+retriever = vector_store.as_retriever(search_type="similarity",search_kwargs={"k": 4})
+
+# %%
+retriever
+
+# %%
+question = 'What this video related to?'
+context_text = retriever.invoke(question)
+context_text
+
+# %% [markdown]
+# # Step 3 -> Augmentation
+
+# %%
+prompt = PromptTemplate(
+    template="""You are an assistant for question-answering tasks. Use the following pieces of retrieved context(retrieved from one youtube video) to answer the question. If you don't know the answer, just say that you don't know.
+    \nnQuestion: {question}
+    \nnRetrieved Context: {context}  """,
+    input_variables=["question", "context"],
+)
+
+
+
+# %%
+context = '\n\n'.join([doc.page_content for doc in context_text])
+
+# %%
+final_prompt = prompt.invoke({'context':context,'question':question})
+final_prompt
+
+# %% [markdown]
+# # Generation
+
+# %%
+# make llm for genration
+
+
+# %%
+llm = ChatGoogleGenerativeAI(model="gemini-1.5-pro",api_key=os.getenv('GOOGLE_API_KEY'))
+
+# %%
+answer = llm.invoke(final_prompt)
+answer
+
+# %%
+answer.content
+
+# %%
+parser = StrOutputParser()
+
+# %% [markdown]
+# # making chains
+
+# %%
+def get_context(context_text):
+    context = '\n\n'.join([doc.page_content for doc in context_text])
+    return context
+
+# %%
+
+# Parallel chain
+parallelChain = RunnableParallel({
+    'context': retriever | RunnableLambda(get_context),
+    'question':RunnablePassthrough()
+
+})
+
+chain = parallelChain | prompt | llm | parser
+chain.invoke('I would like if you summarize this video')
+
+# %%
+import streamlit as st
+
+streamlit.set_page_config(layout="wide")
+
+def main():
+    st.title("Youtube Video Summarization")
+    st.sidebar.title("Input")
+    video_id = st.sidebar.text_input("Video ID", "LPZh9BOjkQs")
+    st.sidebar.text("Note: This tool uses YouTube Transcript API for video transcription and HuggingFace's LLM for summarization.")
+    
+
+# %%
+
+
+

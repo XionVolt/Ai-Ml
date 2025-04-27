@@ -66,4 +66,27 @@ So basically RAG is a way to make language model smarter by giving it extra info
 
 - [Step2: Plan of Action](https://youtu.be/J5_-l7WIO_w?si=eaJTGO-nYrvR9Wqb&t=287)
 
-- [Step3: ]()
+- [Step3: Installing dependencies and setting up the environment](https://youtu.be/J5_-l7WIO_w?si=ItYTIRWvWh7-9xlE&t=537)
+
+- [Step4: Indexing](https://youtu.be/J5_-l7WIO_w?si=FeFoz2d8DOxG97cX&t=577)
+
+- [Step5: Retrieval](https://youtu.be/J5_-l7WIO_w?si=ThdCmP-QE8NqqOAs&t=1107)
+
+- [Step6: Augmentatation](https://youtu.be/J5_-l7WIO_w?si=gdTB0FERLccYHoyb&t=1157)
+
+- [Step7: Generation](https://youtu.be/J5_-l7WIO_w?si=RsNUKVBI1zIXbv5f&t=1347)
+
+- [Step8: Represent all workflow in langchain chains](https://youtu.be/J5_-l7WIO_w?si=sgwt9ZpT5T4yIdmP&t=1487 )
+
+- [Step9: Improvements(Ui based enchancements)](https://youtu.be/J5_-l7WIO_w?si=k226YSjWeh_1rR7F&t=1997)
+   - [Evaluation, libraries like `ragas` and `langsmith`, and what are various measures for evaluation](https://youtu.be/J5_-l7WIO_w?si=k226YSjWeh_1rR7F&t=1997)
+   - [Indexing, means there are scope of improvements in **Document Ingestion, Text Splitting, Embedding generation, Vector store**](https://youtu.be/J5_-l7WIO_w?si=cbHvhmqLOyjTSTVd&t=2147)
+   - [Retrieval](https://youtu.be/J5_-l7WIO_w?si=G-_vQSpQfOSkYyqw&t=2227)
+       i. [Pre-retrieval, **Domain aware routing** also explain](https://youtu.be/J5_-l7WIO_w?si=G-_vQSpQfOSkYyqw&t=2227)
+       ii. [During Retrieval](https://youtu.be/J5_-l7WIO_w?si=WILVdM7jEi-37TAG&t=2347)
+       iii. [Post-retrieval](https://youtu.be/J5_-l7WIO_w?si=BqQX-dz6vxldekym&t=2447)
+       iv. [Augmentation](https://youtu.be/J5_-l7WIO_w?si=VAEMGxOti70iYrc6&t=2427)
+       v. [Generation](https://youtu.be/J5_-l7WIO_w?si=SvzE037irWdgwqXz&t=2517)
+       vi. [System Design](https://youtu.be/J5_-l7WIO_w?si=i-BTfGjOn96OT-mI&t=2577)
+
+
