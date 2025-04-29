@@ -11,7 +11,7 @@ api_key = os.getenv("HUGGINGFACEHUB_API_TOKEN")
 # Initialize the embedding model
 embeddings = HuggingFaceInferenceAPIEmbeddings(
     api_key=api_key,
-    model_name="sentence-transformers/all-MiniLM-L6-v2"
+    model_name="intfloat/multilingual-e5-large"
 )
 
 
