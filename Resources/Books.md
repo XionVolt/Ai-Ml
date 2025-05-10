@@ -1,0 +1,1 @@
+- [**The Daily Dose of Data Science** by `@DailyDoseOfDS_` provided this ebook related to deep learning and Classical Ml, its a is a comprehensive collection of posts on core data science and machine learning topics](https://join.dailydoseofds.com/)
