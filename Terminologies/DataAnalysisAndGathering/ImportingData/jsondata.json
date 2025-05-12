@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Alice",
+    "age": 25,
+    "city": "New York",
+    "is_student": false
+  },
+  {
+    "id": 2,
+    "name": "Bob",
+    "age": 30,
+    "city": "Los Angeles",
+    "is_student": true
+  },
+  {
+    "id": 3,
+    "name": "Charlie",
+    "age": 22,
+    "city": "Chicago",
+    "is_student": false
+  },
+  {
+    "id": 4,
+    "name": "David",
+    "age": 28,
+    "city": "San Francisco",
+    "is_student": true
+  },
+  {
+    "id": 5,
+    "name": "Eve",
+    "age": 27,
+    "city": "Seattle",
+    "is_student": false
+  },
+  {
+    "id": 6,
+    "name": "Frank",
+    "age": 31,
+    "city": "Austin",
+    "is_student": true
+  },
+  {
+    "id": 7,
+    "name": "Grace",
+    "age": 24,
+    "city": "Boston",
+    "is_student": false
+  }
+]

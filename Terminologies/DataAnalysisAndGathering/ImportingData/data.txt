@@ -1,0 +1,7 @@
+ArticleTitle	Question	Answer	DifficultyFromQuestioner	DifficultyFromAnswerer	ArticleFile
+Abraham_Lincoln	Was Abraham Lincoln the sixteenth President of the United States?	Yes.	yes	easy	easy	S08_set3_a4
+Abraham_Lincoln	Did Lincoln sign the National Banking Act of 1863?	Yes.	yes	easy	medium	S08_set3_a4
+Abraham_Lincoln	Did his mother die of pneumonia?	No.	easy	medium	S08_set3_a4
+Abraham_Lincoln	Was Lincoln born in Kentucky?	Yes.	easy	easy	S08_set3_a4
+Abraham_Lincoln	Did Abraham Lincoln abolish slavery?	Yes.	medium	hard	S08_set3_a4
+Abraham_Lincoln	Was Lincoln assassinated in a theater?	Yes.	easy	medium	S08_set3_a4
