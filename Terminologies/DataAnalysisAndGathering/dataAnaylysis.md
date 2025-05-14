@@ -19,7 +19,7 @@ One example of data analysis in the business sector is how an **e-commerce compa
         - [2b. Assesing Data](https://youtu.be/dA6ZksRR6aw?si=A4LVdK66dttPZhFU&t=927)
         - [2c. Cleaning Data](https://youtu.be/dA6ZksRR6aw?si=i97lncnES3A2P6vm&t=951)
 
-- [EDA (Exploratory Data Analysis)](https://youtu.be/dA6ZksRR6aw?si=xldNMWV0gA5LiZMq&t=577), after you clean the data, now we want to visualize the data,explore it, find patterns In this stage we draw various plots/graphs to understand the data, basically first we explore the data(plotting graphs), then we augment(doing meaninful changes in the data, so you better conclude and work with data), basically augmenting the data is also called to be ***feature engineering***
+- [EDA (Exploratory Data Analysis)](https://youtu.be/dA6ZksRR6aw?si=xldNMWV0gA5LiZMq&t=577), after you clean the data, now we want to visualize the data,explore it, find patterns In this stage we plot various graphs to understand the data, basically first we explore the data(plotting graphs), then we augment(doing meaninful changes in the data, so you better conclude and work with data), basically augmenting the data is also called to be ***feature engineering***
     - [EDA step explained](https://youtu.be/dA6ZksRR6aw?si=jwNMSxLzpeJeGWuL&t=1007)
 
 - [Drawing conclusions](https://youtu.be/dA6ZksRR6aw?si=_65toovZIVCqB54G&t=605), after we draw plots/graphs and explore the data, we draw conclusions and draw insights from it.\
